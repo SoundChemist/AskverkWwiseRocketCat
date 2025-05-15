@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0FF18152-3047-47EA-9CCF-B3535A169A42}" SchemaVersion="123">
+	<Triggers>
+		<WorkUnit Name="Music" ID="{0FF18152-3047-47EA-9CCF-B3535A169A42}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="gameover" ID="{3BBAF316-8B18-43BB-ACA4-9305A4116590}"/>
+				<Trigger Name="win" ID="{F67F820B-0885-43D9-A724-1B93DEEFAB23}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Triggers>
+</WwiseDocument>

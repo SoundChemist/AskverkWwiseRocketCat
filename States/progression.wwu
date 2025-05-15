@@ -5,9 +5,12 @@
 			<ChildrenList>
 				<StateGroup Name="progression" ID="{375AA783-9468-411D-B847-3ACBB97A1A07}">
 					<ChildrenList>
+						<State Name="None" ID="{5E8BE43D-452B-4FC5-8C46-BFEA6DA167FB}"/>
 						<State Name="build1" ID="{68BEB5EB-5B2C-450F-BD81-53F33B829087}"/>
 						<State Name="build2" ID="{1DF5A59A-A66D-4111-9C4B-7C4CEC214DBB}"/>
 						<State Name="explore" ID="{881FB9E3-E240-4019-A4FF-0B1B177169E7}"/>
+						<State Name="gameover" ID="{6E161C6C-3E26-4885-9EAD-CFDB33E8D93F}"/>
+						<State Name="win" ID="{D459767F-4B2A-4C8B-9F4F-692F50CE24B8}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
