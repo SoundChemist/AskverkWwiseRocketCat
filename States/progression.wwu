@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5EE397DD-8EC2-474C-9930-48615CE3F2C3}" SchemaVersion="123">
+	<States>
+		<WorkUnit Name="progression" ID="{5EE397DD-8EC2-474C-9930-48615CE3F2C3}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="progression" ID="{375AA783-9468-411D-B847-3ACBB97A1A07}">
+					<ChildrenList>
+						<State Name="build1" ID="{68BEB5EB-5B2C-450F-BD81-53F33B829087}"/>
+						<State Name="build2" ID="{1DF5A59A-A66D-4111-9C4B-7C4CEC214DBB}"/>
+						<State Name="explore" ID="{881FB9E3-E240-4019-A4FF-0B1B177169E7}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
