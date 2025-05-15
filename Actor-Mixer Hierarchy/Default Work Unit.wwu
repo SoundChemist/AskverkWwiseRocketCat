@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}" SchemaVersion="123">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="test" ID="{ED40F4FA-707A-4385-9E52-D639627BE55B}" ShortID="345039549">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="animal-sheep-bleat-04" ID="{234530F6-0534-492F-8459-635B3B5360EC}">
+							<Language>SFX</Language>
+							<AudioFile>animal-sheep-bleat-04.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1012740288"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="animal-sheep-bleat-04" ID="{234530F6-0534-492F-8459-635B3B5360EC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
