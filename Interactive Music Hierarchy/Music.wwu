@@ -79,6 +79,19 @@
 													<PropertyList>
 														<Property Name="LoopCount" Type="int16" Value="0"/>
 													</PropertyList>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{735523C4-DB7C-49C7-BBBD-97189BC122C5}" ShortID="148561658">
+															<PropertyList>
+																<Property Name="LoopCount" Type="int16" Value="0"/>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="explore" ID="{A6627644-D34B-474B-A5BF-6D1D3F584A2F}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+													</ChildrenList>
 												</MusicPlaylistItem>
 											</Custom>
 										</Reference>
@@ -615,6 +628,19 @@
 													<PropertyList>
 														<Property Name="LoopCount" Type="int16" Value="0"/>
 													</PropertyList>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{65A08989-41F4-430C-8CEB-B2C5DB9DC12E}" ShortID="389375015">
+															<PropertyList>
+																<Property Name="LoopCount" Type="int16" Value="0"/>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="build2" ID="{DE45A4B4-3781-4D72-B1ED-6472CFE32326}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+													</ChildrenList>
 												</MusicPlaylistItem>
 											</Custom>
 										</Reference>
