@@ -51,6 +51,9 @@
 									</ReferenceList>
 								</Action>
 								<Action Name="" ID="{4A07D7F5-D51C-40BF-AFC5-54DB769F976C}" ShortID="1046483805">
+									<PropertyList>
+										<Property Name="Probability" Type="Real64" Value="15"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="impact_meow" ID="{95F3C622-8B40-4C38-9EA1-CA9FC905263A}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
@@ -98,6 +101,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_sfx_plr_grip_release" ID="{629AF15E-A2D9-48F7-B022-070C727CC12B}">
+							<ChildrenList>
+								<Action Name="" ID="{2E478234-E1BF-4CCF-91CA-6A1A2EABF41C}" ShortID="134036322">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_plr_grip_release" ID="{FAFC2068-56E7-4EC5-A4AE-D436715C51F3}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{62443B06-A096-48F5-B82C-55D86D20F778}" ShortID="782262445">
@@ -139,6 +153,56 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_sfx_int_pickup_ball" ID="{9D8AC5AA-4E8B-483F-80EF-F41D36EBB184}">
+							<ChildrenList>
+								<Action Name="" ID="{B15D9815-FE75-447A-8C89-963616DCA97B}" ShortID="541778772">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_int_pickup_ball" ID="{10B4B7C5-B6D0-4A90-99B3-5C8053B034D6}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_sfx_int_collision_key" ID="{08C66577-84A3-4C4A-BC9A-3B3BB609AE2B}">
+							<ChildrenList>
+								<Action Name="" ID="{80C937C8-89BA-413E-92B8-9EF38B321205}" ShortID="637997523">
+									<PropertyList>
+										<Property Name="Probability" Type="Real64" Value="30"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_int_collision_key" ID="{F3223EC6-F474-4FC8-B078-83FCECE93D57}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_sfx_int_switch_activate" ID="{25F1480A-59CC-44F4-A6AA-132680233FE9}">
+							<ChildrenList>
+								<Action Name="" ID="{4CE19CC0-0012-489E-A1DD-953B9C5A9F2B}" ShortID="647962124">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_int_switch_activate" ID="{F12792A2-87CE-493F-B9CF-8CBA0B951438}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_sfx_int_collision_ball" ID="{27570E82-4ECA-498B-A3ED-385DE854B74D}">
+							<ChildrenList>
+								<Action Name="" ID="{C54CAE60-B1FB-48A2-8EC3-5D85F32C1BC5}" ShortID="114861110">
+									<PropertyList>
+										<Property Name="Probability" Type="Real64" Value="30"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_int_pickup_ball" ID="{10B4B7C5-B6D0-4A90-99B3-5C8053B034D6}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="State" ID="{6F148457-9119-4F94-B9F8-6A5914A20136}" ShortID="213422169">
@@ -156,17 +220,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_sfx_int_collision_key" ID="{08C66577-84A3-4C4A-BC9A-3B3BB609AE2B}">
-					<ChildrenList>
-						<Action Name="" ID="{80C937C8-89BA-413E-92B8-9EF38B321205}" ShortID="637997523">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="sfx_int_collision_key" ID="{F3223EC6-F474-4FC8-B078-83FCECE93D57}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
