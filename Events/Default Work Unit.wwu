@@ -59,6 +59,45 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_sfx_plr_dead_spike" ID="{A2284449-8ED1-411C-9768-459B02FC60F4}">
+							<ChildrenList>
+								<Action Name="" ID="{BA9CA9C2-7E50-47E5-AFD4-924A71115694}" ShortID="336332263">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="dead_sheep" ID="{C586CFF9-C472-4390-AA13-25E858678BCE}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9881F0A7-3722-4CDF-962E-75EA72436A9E}" ShortID="304068389">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="dead_spike" ID="{E0836826-B09C-495C-A356-8DC6E869ABB8}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_sfx_plr_dead_water" ID="{732A536B-29D3-4DB2-B060-FCAC05D72F94}">
+							<ChildrenList>
+								<Action Name="" ID="{479DCA57-15BE-4840-9AFA-5CF723AA6A13}" ShortID="135901606">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="dead_duck" ID="{D4585AF4-633A-45B2-B651-485C00B6C889}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F500635E-E0E4-478A-A675-850D02E781C7}" ShortID="912666955">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="dead_water" ID="{E7228484-3706-46E6-8E4C-1A162FF627DB}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{62443B06-A096-48F5-B82C-55D86D20F778}" ShortID="782262445">
@@ -89,8 +128,45 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_sfx_int_pickup_key" ID="{96100745-BEC0-488B-9014-2118447E63DD}">
+							<ChildrenList>
+								<Action Name="" ID="{2F08B153-4ECD-4C50-9E8A-5B5C3FFF444C}" ShortID="140283120">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_int_pickup_key" ID="{6FA15EEA-DABC-4CEB-841F-6E03910D3A1D}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="State" ID="{6F148457-9119-4F94-B9F8-6A5914A20136}" ShortID="213422169">
+					<ChildrenList>
+						<Event Name="Play_sfx_level_complete" ID="{7CAA0FB0-4BA2-4470-8867-566FD01456D7}">
+							<ChildrenList>
+								<Action Name="" ID="{EC69B2AC-F271-4050-BD8D-FFAB81FFB200}" ShortID="125277090">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_level_complete" ID="{BF70DF20-49E0-4B35-B4CF-F486D1D8132D}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_sfx_int_collision_key" ID="{08C66577-84A3-4C4A-BC9A-3B3BB609AE2B}">
+					<ChildrenList>
+						<Action Name="" ID="{80C937C8-89BA-413E-92B8-9EF38B321205}" ShortID="637997523">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_int_collision_key" ID="{F3223EC6-F474-4FC8-B078-83FCECE93D57}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
