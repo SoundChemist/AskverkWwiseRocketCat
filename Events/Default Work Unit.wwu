@@ -121,7 +121,7 @@
 								<Action Name="" ID="{79A4C897-5CBA-4BF8-BA45-772CDBF6E28B}" ShortID="542479749">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="build1" ID="{5AAFE835-7013-4D29-B4BC-9FB8D5747031}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
+											<ObjectRef Name="level1progression" ID="{A910A2A2-7C19-42CD-8099-7278D38D8473}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
