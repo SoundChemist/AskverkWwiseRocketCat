@@ -3,7 +3,7 @@
 	<InteractiveMusic>
 		<WorkUnit Name="Music" ID="{88453746-E797-4C3A-B253-F2E60B264585}" PersistMode="Standalone">
 			<ChildrenList>
-				<MusicSwitchContainer Name="level 1 progression" ID="{A910A2A2-7C19-42CD-8099-7278D38D8473}" ShortID="54665044">
+				<MusicSwitchContainer Name="level1progression" ID="{A910A2A2-7C19-42CD-8099-7278D38D8473}" ShortID="54665044">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>

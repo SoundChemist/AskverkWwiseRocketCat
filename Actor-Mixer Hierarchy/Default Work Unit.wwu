@@ -25,6 +25,292 @@
 						<ActiveSource Name="animal-sheep-bleat-04" ID="{234530F6-0534-492F-8459-635B3B5360EC}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Folder Name="Player" ID="{7A616D66-D0C0-4735-8542-4D259257489B}" ShortID="784032779">
+					<ChildrenList>
+						<Sound Name="sfx_plr_thrusters_loop" ID="{A4334364-1FA6-4D0B-AC89-15E575FA9DC5}" ShortID="965343335">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_plr_thrusters_loop" ID="{FEB0BA47-CE59-4E8C-A594-35C9D9392191}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_plr_thrusters_loop.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="443236579"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_plr_thrusters_loop" ID="{FEB0BA47-CE59-4E8C-A594-35C9D9392191}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="sfx_plr_impact" ID="{A17077E9-F1AA-4D56-930B-99E86BF609C7}" ShortID="843320377">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="impact_meow" ID="{95F3C622-8B40-4C38-9EA1-CA9FC905263A}" ShortID="1011990345">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_plr_impact_meow_01" ID="{658C2BF5-A9CC-488B-88B2-4D15182888A9}" ShortID="395377742">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_plr_impact_meow_01" ID="{E7F8AA0B-8DDB-4480-B275-1DCD7CF0541D}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_plr_impact_meow_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="26787559"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_plr_impact_meow_01" ID="{E7F8AA0B-8DDB-4480-B275-1DCD7CF0541D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_plr_impact_meow_02" ID="{28104C94-B380-4F75-8A16-EA9D9D45EEF1}" ShortID="778361450">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_plr_impact_meow_02" ID="{164A9032-95BA-4E8E-9F64-301D154EED6D}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_plr_impact_meow_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="313803401"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_plr_impact_meow_02" ID="{164A9032-95BA-4E8E-9F64-301D154EED6D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_plr_impact_meow_03" ID="{7F0A1F0B-6355-4608-9A90-5AD15B6206F3}" ShortID="962267809">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_plr_impact_meow_03" ID="{DA8CAFB1-89C8-4E92-91DA-BAF4458E0955}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_plr_impact_meow_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="598068682"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_plr_impact_meow_03" ID="{DA8CAFB1-89C8-4E92-91DA-BAF4458E0955}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="impact_dirt" ID="{8E1C1596-B725-45C6-907B-52354DABCD2D}" ShortID="436639630">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_plr_impact_dirt_01" ID="{FA4036C8-9987-4517-819F-33C7726F6DF5}" ShortID="529354985">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_plr_impact_dirt_01" ID="{734B2A2C-9C5B-42CF-BEB8-238D50751692}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_plr_impact_dirt_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="530016499"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_plr_impact_dirt_01" ID="{734B2A2C-9C5B-42CF-BEB8-238D50751692}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_plr_impact_dirt_02" ID="{7EF3B515-5BD8-411C-903C-9A34B38DB411}" ShortID="511529826">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_plr_impact_dirt_02" ID="{883BFB8D-9469-448E-897C-6EC1649A9DB0}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_plr_impact_dirt_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="971801675"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_plr_impact_dirt_02" ID="{883BFB8D-9469-448E-897C-6EC1649A9DB0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_plr_impact_dirt_03" ID="{83B8F920-1053-4F32-8BA5-BE61254930F8}" ShortID="67356866">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_plr_impact_dirt_03" ID="{BF409F3B-33B5-49DE-A4BB-41AD147F0AC9}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_plr_impact_dirt_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="261402352"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_plr_impact_dirt_03" ID="{BF409F3B-33B5-49DE-A4BB-41AD147F0AC9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_plr_impact_dirt_04" ID="{A801E806-4EF0-4B41-97F2-D010815004DD}" ShortID="174385004">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_plr_impact_dirt_04" ID="{A67413B6-7255-4E72-8C60-05C3C7572344}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_plr_impact_dirt_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1014592335"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_plr_impact_dirt_04" ID="{A67413B6-7255-4E72-8C60-05C3C7572344}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_plr_impact_dirt_05" ID="{49300E25-CF08-4E2B-A03E-B719963A4BC2}" ShortID="370449915">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_plr_impact_dirt_05" ID="{21F88F0A-A7F7-4710-993D-F217EA458965}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_plr_impact_dirt_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="474367232"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_plr_impact_dirt_05" ID="{21F88F0A-A7F7-4710-993D-F217EA458965}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_plr_impact_dirt_06" ID="{DED24AB7-84FA-4AD1-AAFB-789A5EF38853}" ShortID="1041603954">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_plr_impact_dirt_06" ID="{73B3B208-7DE6-4297-B653-9CC06CC423AE}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_plr_impact_dirt_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="84714655"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_plr_impact_dirt_06" ID="{73B3B208-7DE6-4297-B653-9CC06CC423AE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Interactable" ID="{B3D7D016-2C98-4DDC-976E-9F39727E30AA}" ShortID="436513528">
+					<ChildrenList>
+						<Sound Name="sfx_interact_gate_open" ID="{0BB792C9-F1D0-4147-80A0-CFAEBC3DD3C6}" ShortID="764713996">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_int_gate_open" ID="{049FEC81-F573-4E43-8ACF-3BF5C08B3037}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_int_gate_open.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="135548338"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_int_gate_open" ID="{049FEC81-F573-4E43-8ACF-3BF5C08B3037}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
