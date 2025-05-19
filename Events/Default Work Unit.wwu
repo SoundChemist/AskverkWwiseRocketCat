@@ -220,6 +220,16 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Stop_all" ID="{9B574105-56BB-446F-B15D-4DD8AC602F93}">
+					<ChildrenList>
+						<Action Name="" ID="{233FA549-DE28-4609-BC26-0CD5AE2D5C5E}" ShortID="1064130918">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

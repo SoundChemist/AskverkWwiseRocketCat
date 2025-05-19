@@ -77,7 +77,13 @@
 											<Custom>
 												<MusicPlaylistItem Name="" ID="{7A9A3FCD-972D-4C93-A983-BE34C8E7197F}" ShortID="440755505">
 													<PropertyList>
-														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="LoopCount" Type="int16" Value="0">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{34F7034C-11F6-4C28-A4D8-DA4954510781}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 													</PropertyList>
 													<ChildrenList>
 														<MusicPlaylistItem Name="" ID="{735523C4-DB7C-49C7-BBBD-97189BC122C5}" ShortID="148561658">
