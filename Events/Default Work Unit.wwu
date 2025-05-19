@@ -118,7 +118,7 @@
 					<ChildrenList>
 						<Event Name="mx_level1" ID="{7C2EBEBC-9D1F-41D8-A616-3FBC0D87180E}">
 							<ChildrenList>
-								<Action Name="" ID="{79A4C897-5CBA-4BF8-BA45-772CDBF6E28B}" ShortID="542479749">
+								<Action Name="" ID="{FC3F346C-9AA0-499C-AE75-70450B67B057}" ShortID="489733261">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="level1progression" ID="{A910A2A2-7C19-42CD-8099-7278D38D8473}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>

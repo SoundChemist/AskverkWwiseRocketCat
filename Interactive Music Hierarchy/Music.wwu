@@ -82,7 +82,6 @@
 													<ChildrenList>
 														<MusicPlaylistItem Name="" ID="{735523C4-DB7C-49C7-BBBD-97189BC122C5}" ShortID="148561658">
 															<PropertyList>
-																<Property Name="LoopCount" Type="int16" Value="0"/>
 																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 															</PropertyList>
 															<ReferenceList>
@@ -366,7 +365,6 @@
 													<ChildrenList>
 														<MusicPlaylistItem Name="" ID="{9C5E3084-D61B-4D1D-AEB5-7AA08F2CC257}" ShortID="629211609">
 															<PropertyList>
-																<Property Name="LoopCount" Type="int16" Value="0"/>
 																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 															</PropertyList>
 															<ReferenceList>
@@ -631,7 +629,6 @@
 													<ChildrenList>
 														<MusicPlaylistItem Name="" ID="{65A08989-41F4-430C-8CEB-B2C5DB9DC12E}" ShortID="389375015">
 															<PropertyList>
-																<Property Name="LoopCount" Type="int16" Value="0"/>
 																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 															</PropertyList>
 															<ReferenceList>
@@ -1159,42 +1156,6 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{611881E2-543A-4823-A1A6-9F91EE565E76}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="build1" ID="{2D8C7017-E7FE-4162-B462-41F85E3F4F7C}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="build1" ID="{68BEB5EB-5B2C-450F-BD81-53F33B829087}" WorkUnitID="{5EE397DD-8EC2-474C-9930-48615CE3F2C3}"/>
-												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{59DAAD00-7034-4647-A643-BBBA0CD2DD9E}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="build2" ID="{DE45A4B4-3781-4D72-B1ED-6472CFE32326}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="build2" ID="{1DF5A59A-A66D-4111-9C4B-7C4CEC214DBB}" WorkUnitID="{5EE397DD-8EC2-474C-9930-48615CE3F2C3}"/>
-												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
 									<MultiSwitchEntry Name="" ID="{A5FB9F3A-92AF-4928-9F52-F4ECDE388DAA}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
@@ -1231,10 +1192,46 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{A9233429-2156-452E-BA95-182E757CB8A4}">
+									<MultiSwitchEntry Name="" ID="{59CF66AF-9D6B-4D90-99A0-DF1289A8438D}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="explore" ID="{A6627644-D34B-474B-A5BF-6D1D3F584A2F}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
+												<ObjectRef Name="build1" ID="{5AAFE835-7013-4D29-B4BC-9FB8D5747031}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="build1" ID="{68BEB5EB-5B2C-450F-BD81-53F33B829087}" WorkUnitID="{5EE397DD-8EC2-474C-9930-48615CE3F2C3}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{FE704C48-15C7-4891-8F1D-11A875009CF1}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="build2" ID="{6830A994-F844-4D97-A321-C47D6AD99DDA}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="build2" ID="{1DF5A59A-A66D-4111-9C4B-7C4CEC214DBB}" WorkUnitID="{5EE397DD-8EC2-474C-9930-48615CE3F2C3}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{5AA1AF40-2C6F-46B9-973B-767A2B5E547A}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="explore" ID="{429FA859-C86A-43E8-8278-AFE30D6CB78E}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
