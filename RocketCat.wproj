@@ -44,7 +44,7 @@
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
 						<Value Platform="Mac">..\gj-25\Wwise\GeneratedSoundBanks\Mac\</Value>
-						<Value Platform="Windows">..\..\..\UnityProjects\AskverkStudios\gj-25\Wwise\GeneratedSoundBanks\Windows\</Value>
+						<Value Platform="Windows">..\gj-25\Wwise\GeneratedSoundBanks\Windows\</Value>
 						<Value Platform="Linux">..\gj-25\Wwise\GeneratedSoundBanks\Linux\</Value>
 						<Value Platform="Web">..\gj-25\Wwise\GeneratedSoundBanks\Web\</Value>
 					</ValueList>

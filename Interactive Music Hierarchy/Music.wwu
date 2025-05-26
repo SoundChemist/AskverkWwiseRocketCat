@@ -20,13 +20,74 @@
 									<ChildrenList>
 										<MusicTransition Name="Transition" ID="{F17DB549-899B-47AC-8EFE-2B3719E3BA03}">
 											<PropertyList>
+												<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
 												<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+												<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
 											</PropertyList>
 											<TransitionInfo>
 												<SourceFadeOut>
 													<MusicFade Name="Source Fade-out" ID="{EFF1746E-EE6E-4FDA-A858-DEC930F4FD6D}">
 														<PropertyList>
-															<Property Name="FadeTime" Type="Real64" Value="1"/>
+															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{9AD52541-F36F-47E3-949A-4D22900B7112}">
+														<PropertyList>
+															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{8B0E8151-4E41-43E6-BC60-EB016196253A}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="gameover" ID="{4768DDAC-A6D6-4B24-BB59-65E6E4F3C820}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{2253A989-42C2-4E57-BB8C-6111A66C7A69}">
+														<PropertyList>
+															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{FEDEB978-DFDE-4DAB-9C17-2FC9455EC001}">
+														<PropertyList>
+															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{DFBBF789-F52F-466F-B424-A01519C28E01}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+												<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="win" ID="{E531FFCD-6A18-4BE2-8C7B-CAAE3F1FE170}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{07DA26D0-D5E7-4C8E-B01F-73DD272F21BF}">
+														<PropertyList>
+															<Property Name="FadeTime" Type="Real64" Value="0.4"/>
 															<Property Name="FadeType" Type="int16" Value="1"/>
 														</PropertyList>
 													</MusicFade>
@@ -119,7 +180,7 @@
 									<ChildrenList>
 										<MusicSegment Name="explore" ID="{A6627644-D34B-474B-A5BF-6D1D3F584A2F}" ShortID="641354100">
 											<PropertyList>
-												<Property Name="EndPosition" Type="Real64" Value="32500"/>
+												<Property Name="EndPosition" Type="Real64" Value="40890.1734104046"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -940,7 +1001,7 @@
 						</MusicSwitchContainer>
 						<MusicSegment Name="gameover" ID="{4768DDAC-A6D6-4B24-BB59-65E6E4F3C820}" ShortID="350084018">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="5000"/>
+								<Property Name="EndPosition" Type="Real64" Value="5433.52601156069"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1008,7 +1069,11 @@
 								<ObjectList Name="Cues">
 									<Reference>
 										<Local>
-											<MusicCue Name="Entry Cue" ID="{463DA60B-3407-4E7F-A6CA-9E87E0CACDDB}"/>
+											<MusicCue Name="Entry Cue" ID="{463DA60B-3407-4E7F-A6CA-9E87E0CACDDB}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="500"/>
+												</PropertyList>
+											</MusicCue>
 										</Local>
 									</Reference>
 									<Reference>
@@ -1026,7 +1091,7 @@
 						</MusicSegment>
 						<MusicSegment Name="win" ID="{E531FFCD-6A18-4BE2-8C7B-CAAE3F1FE170}" ShortID="1031571008">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="6230.8125"/>
+								<Property Name="EndPosition" Type="Real64" Value="7671.28702428437"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1094,7 +1159,11 @@
 								<ObjectList Name="Cues">
 									<Reference>
 										<Local>
-											<MusicCue Name="Entry Cue" ID="{5769464B-B6F7-442A-B1C5-8DF01EB10AEF}"/>
+											<MusicCue Name="Entry Cue" ID="{5769464B-B6F7-442A-B1C5-8DF01EB10AEF}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="302.712339300641"/>
+												</PropertyList>
+											</MusicCue>
 										</Local>
 									</Reference>
 									<Reference>
@@ -1248,6 +1317,25 @@
 											</ObjectList>
 										</ObjectLists>
 									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="Stingers">
+							<Reference>
+								<Local>
+									<MusicStinger Name="" ID="{8C8AF6C0-4862-4E04-AF20-0BF7E613490E}">
+										<PropertyList>
+											<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="Segment">
+												<ObjectRef Name="win" ID="{E531FFCD-6A18-4BE2-8C7B-CAAE3F1FE170}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
+											</Reference>
+											<Reference Name="Trigger">
+												<ObjectRef Name="win" ID="{F67F820B-0885-43D9-A724-1B93DEEFAB23}" WorkUnitID="{0FF18152-3047-47EA-9CCF-B3535A169A42}"/>
+											</Reference>
+										</ReferenceList>
+									</MusicStinger>
 								</Local>
 							</Reference>
 						</ObjectList>
