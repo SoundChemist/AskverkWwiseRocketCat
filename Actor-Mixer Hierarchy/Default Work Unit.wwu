@@ -826,6 +826,172 @@
 								<ActiveSource Name="sfx_int_switch_activate" ID="{CB3FF929-DD04-4CCC-B23A-4D8D9CE3A9FE}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<BlendContainer Name="sfx_int_worm_open" ID="{2C760F87-AEA9-49CC-9B9C-A1983E32654F}" ShortID="17062401">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{19AC6B77-0E5E-4380-BCC7-EFB33712825D}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_int_worm_open-001" ID="{AE494F70-A4A1-409A-8456-8D8AEC9F375F}" ShortID="115471601">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2D4852CC-2B71-495C-8278-070F579205A8}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="75"/>
+															<Property Name="Min" Type="Real64" Value="-75"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B0D94062-CFD9-48BE-A73B-3FC31D926516}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="7"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_int_worm_open-001" ID="{649590A3-0C1E-4004-B061-93373BC2DB9A}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_int_worm_open-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="111906746"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_int_worm_open-001" ID="{649590A3-0C1E-4004-B061-93373BC2DB9A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_int_worm_open-002" ID="{17AE0EA7-50E3-485B-B6BE-D432808D0E4C}" ShortID="59655516">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D27DFD7A-0245-4EE3-B737-59A4D44262B7}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_int_worm_open-002" ID="{A977A021-14EB-47A2-A64A-CE065FA819D0}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_int_worm_open-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="776715283"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_int_worm_open-002" ID="{A977A021-14EB-47A2-A64A-CE065FA819D0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_int_worm_open-003" ID="{B98F0AEB-B630-43AC-8BC2-73B016F4C2AF}" ShortID="1050700590">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E29C5CC9-7548-489C-8AAA-6A6685E01382}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="75"/>
+															<Property Name="Min" Type="Real64" Value="-150"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_int_worm_open-003" ID="{17706B44-2401-4F5E-8C1F-99773FEBDE32}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_int_worm_open-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="404041496"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_int_worm_open-003" ID="{17706B44-2401-4F5E-8C1F-99773FEBDE32}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<Sound Name="sfx_int_worm_wind_loop" ID="{4D8AD1FA-BB60-4A36-AD99-27178BC34EAF}" ShortID="1060674102">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_int_worm_wind_loop" ID="{4BB46781-88DA-4886-B41E-01BAE769AB0E}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_int_worm_wind_loop.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="330339853"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_int_worm_wind_loop" ID="{4BB46781-88DA-4886-B41E-01BAE769AB0E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="State" ID="{A4E638F3-F124-464D-BDD3-3AD519531FEE}" ShortID="947382481">

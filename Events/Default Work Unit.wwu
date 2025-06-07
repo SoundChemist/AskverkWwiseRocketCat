@@ -127,6 +127,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="stop_mx_level1" ID="{E77D50B2-C6A8-446C-8446-41DCFD97551D}">
+							<ChildrenList>
+								<Action Name="" ID="{756E2954-5DD4-4021-8FFA-3771BDFE10B3}" ShortID="343506472">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="level1progression" ID="{A910A2A2-7C19-42CD-8099-7278D38D8473}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Interactable" ID="{273C1BCC-2181-4A2B-968D-53C761F859A4}" ShortID="454099848">
@@ -198,6 +212,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="sfx_int_pickup_ball" ID="{10B4B7C5-B6D0-4A90-99B3-5C8053B034D6}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_sfx_int_worm_open" ID="{567F7C54-E182-4DBD-AF97-EF8488CEA0BC}">
+							<ChildrenList>
+								<Action Name="" ID="{4E2EDFAB-664B-46EC-A5A4-10494656EC69}" ShortID="380672422">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_int_worm_open" ID="{2C760F87-AEA9-49CC-9B9C-A1983E32654F}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
