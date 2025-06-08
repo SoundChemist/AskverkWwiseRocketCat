@@ -19,6 +19,7 @@
 						<ObjectRef Name="Play_sfx_int_pickup_key" ID="{96100745-BEC0-488B-9014-2118447E63DD}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_plr_grip_release" ID="{629AF15E-A2D9-48F7-B022-070C727CC12B}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_int_collision_ball" ID="{27570E82-4ECA-498B-A3ED-385DE854B74D}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_int_worm_close" ID="{10EE647D-2269-49BD-98DF-BB1A54543980}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_plr_impact" ID="{A7BFA8C9-9525-4C2C-87F9-A2ADEF963AC0}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_int_collision_key" ID="{08C66577-84A3-4C4A-BC9A-3B3BB609AE2B}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_plr_dead_water" ID="{732A536B-29D3-4DB2-B060-FCAC05D72F94}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
