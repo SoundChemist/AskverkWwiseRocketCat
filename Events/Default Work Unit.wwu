@@ -8,7 +8,7 @@
 						<Action Name="" ID="{2890B5E6-750B-4E77-9E55-18DE0F27A95E}" ShortID="20640543">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="test" ID="{ED40F4FA-707A-4385-9E52-D639627BE55B}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+									<ObjectRef Name="sfx_plr_dead_vo" ID="{ED40F4FA-707A-4385-9E52-D639627BE55B}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
