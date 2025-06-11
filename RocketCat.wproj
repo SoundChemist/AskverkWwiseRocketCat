@@ -40,13 +40,13 @@
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
-				<Property Name="SoundBankHeaderFilePath" Type="string" Value="..\..\..\UnityProjects\AskverkStudios\gj-25\Wwise\GeneratedSoundBanks"/>
+				<Property Name="SoundBankHeaderFilePath" Type="string" Value="..\gj-25\Wwise\GeneratedSoundBanks"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
-						<Value Platform="Mac">..\..\..\UnityProjects\AskverkStudios\gj-25\Wwise\GeneratedSoundBanks\Mac\</Value>
-						<Value Platform="Windows">..\..\..\UnityProjects\AskverkStudios\gj-25\Wwise\GeneratedSoundBanks\Windows\</Value>
-						<Value Platform="Linux">..\..\..\UnityProjects\AskverkStudios\gj-25\Wwise\GeneratedSoundBanks\Linux\</Value>
-						<Value Platform="Web">..\..\..\UnityProjects\AskverkStudios\gj-25\Wwise\GeneratedSoundBanks\Web\</Value>
+						<Value Platform="Mac">..\gj-25\Wwise\GeneratedSoundBanks\Mac\</Value>
+						<Value Platform="Windows">..\gj-25\Wwise\GeneratedSoundBanks\Windows\</Value>
+						<Value Platform="Linux">..\gj-25\Wwise\GeneratedSoundBanks\Linux\</Value>
+						<Value Platform="Web">..\gj-25\Wwise\GeneratedSoundBanks\Web\</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
