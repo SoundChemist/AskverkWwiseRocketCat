@@ -141,6 +141,62 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="mx_mainmenu" ID="{05F088F5-CEBA-40D7-8530-8AB5102535F0}">
+							<ChildrenList>
+								<Action Name="" ID="{1F1F9EE8-38AD-418C-85DE-819D00C44AF7}" ShortID="721848084">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="main menu" ID="{8B1B0F01-D8C2-4737-AC8F-2487DF3CE88F}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stop_mx_mainmenu" ID="{56672D1F-EE39-4441-A2AD-A2EE581FFC94}">
+							<ChildrenList>
+								<Action Name="" ID="{37A08D94-189F-49FB-BFBE-4073BED42C2C}" ShortID="473657839">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="main menu" ID="{8B1B0F01-D8C2-4737-AC8F-2487DF3CE88F}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="filter_mx_level1" ID="{DE3E3903-E985-4F45-9EBD-070B52411586}">
+							<ChildrenList>
+								<Action Name="" ID="{A8441F78-3554-4A31-BECB-BF3DF09270D1}" ShortID="33187099">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="26"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="Lowpass" Type="int16" Value="64"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="level1progression" ID="{A910A2A2-7C19-42CD-8099-7278D38D8473}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="resetfilter_mx_level1" ID="{D225C409-CC62-4277-8ED1-C07ACB04E5E5}">
+							<ChildrenList>
+								<Action Name="" ID="{70B95185-8994-4DF3-98E5-B451C93CC0D2}" ShortID="547924724">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="27"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="level1progression" ID="{A910A2A2-7C19-42CD-8099-7278D38D8473}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Interactable" ID="{273C1BCC-2181-4A2B-968D-53C761F859A4}" ShortID="454099848">

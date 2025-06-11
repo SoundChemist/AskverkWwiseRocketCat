@@ -5,10 +5,13 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{2223BB20-6A69-4BB6-AF7B-30C0D6E66AFA}">
 					<ObjectInclusionList>
+						<ObjectRef Name="mx_mainmenu" ID="{05F088F5-CEBA-40D7-8530-8AB5102535F0}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_plr_dead_spike" ID="{A2284449-8ED1-411C-9768-459B02FC60F4}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_sfx_plr_thrusters_loop" ID="{AD23D286-2DC0-41BF-86D7-D7609A0CB93C}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="mx_level1" ID="{7C2EBEBC-9D1F-41D8-A616-3FBC0D87180E}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="resetfilter_mx_level1" ID="{D225C409-CC62-4277-8ED1-C07ACB04E5E5}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="test" ID="{C38C74D6-E33D-4301-9F54-26F6DEE29E1D}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="stop_mx_mainmenu" ID="{56672D1F-EE39-4441-A2AD-A2EE581FFC94}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_mx_level1" ID="{E77D50B2-C6A8-446C-8446-41DCFD97551D}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_all" ID="{9B574105-56BB-446F-B15D-4DD8AC602F93}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_level_complete" ID="{7CAA0FB0-4BA2-4470-8867-566FD01456D7}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
@@ -24,6 +27,7 @@
 						<ObjectRef Name="Play_sfx_int_collision_key" ID="{08C66577-84A3-4C4A-BC9A-3B3BB609AE2B}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_plr_dead_water" ID="{732A536B-29D3-4DB2-B060-FCAC05D72F94}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_int_worm_open" ID="{567F7C54-E182-4DBD-AF97-EF8488CEA0BC}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="filter_mx_level1" ID="{DE3E3903-E985-4F45-9EBD-070B52411586}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
