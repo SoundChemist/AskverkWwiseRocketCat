@@ -1400,14 +1400,14 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicTrack Name="main menu" ID="{0BCC65C3-032B-48D2-B6D8-AC09AF38C0B1}" ShortID="858404676">
+								<MusicTrack Name="main menu v2" ID="{14DD2C57-B161-4AD9-AD26-E81F16BF5EE2}" ShortID="917961644">
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
 										</Reference>
 										<Reference Name="TransitionRoot">
 											<Custom>
-												<MusicTransition Name="Root" ID="{9AE5CDF5-5C04-40D6-8A3E-D0D5DD412E1B}">
+												<MusicTransition Name="Root" ID="{B717A25F-B4AB-4787-A4B3-559AD35FDAD9}">
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
@@ -1417,11 +1417,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="mx_mainmenu_v1" ID="{3BF65527-2F70-43F8-BD1F-3B56C0DC5CC5}">
+										<AudioFileSource Name="mx_mainmenu_v2" ID="{2767CEC9-1E9A-4F86-8F75-2D34E3837D58}">
 											<Language>SFX</Language>
-											<AudioFile>mx_mainmenu_v1.wav</AudioFile>
+											<AudioFile>mx_mainmenu_v2.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="664621637"/>
+												<MediaID ID="258092940"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -1429,19 +1429,18 @@
 										<ObjectList Name="Sequences">
 											<Reference>
 												<Local>
-													<MusicTrackSequence Name="" ID="{DA202243-DEBA-402C-9A62-A099EBC06FA3}">
+													<MusicTrackSequence Name="" ID="{B85C9D9F-D809-4C08-9827-DDB078725C99}">
 														<ObjectLists>
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClip Name="mx_mainmenu_v1" ID="{C6EAFF18-5F3C-476E-BD29-3D1441435228}">
+																		<MusicClip Name="mx_mainmenu_v2" ID="{DD1121FC-6B27-425A-9B19-599555E528D6}">
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="30500"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="116.866364970927"/>
-																				<Property Name="PlayAt" Type="Real64" Value="11.5606936416185"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																			</PropertyList>
-																			<AudioSourceRef Name="mx_mainmenu_v1" ID="{3BF65527-2F70-43F8-BD1F-3B56C0DC5CC5}"/>
+																			<AudioSourceRef Name="mx_mainmenu_v2" ID="{2767CEC9-1E9A-4F86-8F75-2D34E3837D58}"/>
 																		</MusicClip>
 																	</Local>
 																</Reference>
@@ -1466,7 +1465,7 @@
 											<MusicCue Name="Exit Cue" ID="{A81EBEC9-D9C8-43AF-A2D2-52DE77A42E63}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="30516.0309974514"/>
+													<Property Name="TimeMs" Type="Real64" Value="30491.8850542756"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
