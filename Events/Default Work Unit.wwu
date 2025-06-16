@@ -112,6 +112,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_sfx_plr_grip_hook" ID="{F089EB7E-AFF8-4D7C-BF47-A279AF628C52}">
+							<ChildrenList>
+								<Action Name="" ID="{94263C7A-46D8-4F3F-A9B9-16DA2C4CF0FC}" ShortID="893400716">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_plr_grip_hook" ID="{DE3239FB-4E39-4318-8878-B2ACB3D096AD}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{62443B06-A096-48F5-B82C-55D86D20F778}" ShortID="782262445">

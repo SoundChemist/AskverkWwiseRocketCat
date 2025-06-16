@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<ActorMixer Name="Interactable" ID="{855B3269-6CC1-4238-9D9C-757EE5FD98AE}" ShortID="283529540">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Color" Type="int16" Value="12"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
@@ -562,6 +563,7 @@
 				</ActorMixer>
 				<ActorMixer Name="Player" ID="{CF718E85-51C8-4898-B45B-2CBEC12F8BF2}" ShortID="634379949">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Color" Type="int16" Value="7"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
@@ -1218,6 +1220,28 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="animal-sheep-bleat-04" ID="{234530F6-0534-492F-8459-635B3B5360EC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_plr_grip_hook" ID="{DE3239FB-4E39-4318-8878-B2ACB3D096AD}" ShortID="93288464">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_plr_grip_hook" ID="{16A4D0AA-69BE-44C5-B0EB-6CC8C22CF929}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_plr_grip_hook.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="262935227"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_plr_grip_hook" ID="{16A4D0AA-69BE-44C5-B0EB-6CC8C22CF929}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
