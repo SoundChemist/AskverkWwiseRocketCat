@@ -759,7 +759,6 @@
 												<PropertyList>
 													<Property Name="PropertyName" Type="string" Value="WetLevel"/>
 												</PropertyList>
-												<ReferenceList/>
 											</RTPC>
 										</Local>
 									</Reference>

@@ -3,6 +3,8 @@
 	<ProjectInfo>
 		<Project Name="RocketCat" ID="{B583440C-A5CD-45FC-AE72-72486F8951F8}">
 			<Platforms>
+				<Platform Name="Android" ReferencePlatform="Android" ID="{D7FC20A7-F556-409B-9E77-2F88B86CE7E3}"/>
+				<Platform Name="iOS" ReferencePlatform="iOS" ID="{B232F0DF-2FED-4652-93E6-3A872709D443}"/>
 				<Platform Name="Linux" ReferencePlatform="Linux" ID="{039AF190-DA09-4816-8865-D7E79A3860A2}"/>
 				<Platform Name="Mac" ReferencePlatform="Mac" ID="{9CDD357D-0E1F-43AE-994A-8A9A28E6AC08}"/>
 				<Platform Name="Web" ReferencePlatform="Web" ID="{53317915-2E03-4EEA-8B70-39935BFFFA4A}"/>
@@ -17,24 +19,30 @@
 			<PropertyList>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
+						<Value Platform="Android"></Value>
 						<Value Platform="Mac"></Value>
 						<Value Platform="Windows"></Value>
+						<Value Platform="iOS"></Value>
 						<Value Platform="Linux"></Value>
 						<Value Platform="Web"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="ExternalSourcesOutputPath" Type="string">
 					<ValueList>
+						<Value Platform="Android">GeneratedSoundBanks\Android</Value>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac</Value>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows</Value>
+						<Value Platform="iOS">GeneratedSoundBanks\iOS</Value>
 						<Value Platform="Linux">GeneratedSoundBanks\Linux</Value>
 						<Value Platform="Web">GeneratedSoundBanks\Web</Value>
 					</ValueList>
 				</Property>
 				<Property Name="GlobalVoiceInstancesLimit" Type="int16">
 					<ValueList>
+						<Value Platform="Android">256</Value>
 						<Value Platform="Mac">256</Value>
 						<Value Platform="Windows">256</Value>
+						<Value Platform="iOS">256</Value>
 						<Value Platform="Linux">256</Value>
 						<Value Platform="Web">256</Value>
 					</ValueList>
@@ -43,40 +51,50 @@
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="..\..\..\UnityProjects\AskverkStudios\gj-25\Wwise\GeneratedSoundBanks"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
+						<Value Platform="Android">..\..\..\UnityProjects\AskverkStudios\gj-25\Wwise\GeneratedSoundBanks\Android\</Value>
 						<Value Platform="Mac">..\..\..\UnityProjects\AskverkStudios\gj-25\Wwise\GeneratedSoundBanks\Mac\</Value>
 						<Value Platform="Windows">..\..\..\UnityProjects\AskverkStudios\gj-25\Wwise\GeneratedSoundBanks\Windows\</Value>
+						<Value Platform="iOS">..\..\..\UnityProjects\AskverkStudios\gj-25\Wwise\GeneratedSoundBanks\iOS\</Value>
 						<Value Platform="Linux">..\..\..\UnityProjects\AskverkStudios\gj-25\Wwise\GeneratedSoundBanks\Linux\</Value>
 						<Value Platform="Web">..\..\..\UnityProjects\AskverkStudios\gj-25\Wwise\GeneratedSoundBanks\Web\</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
 					<ValueList>
+						<Value Platform="Android"></Value>
 						<Value Platform="Mac"></Value>
 						<Value Platform="Windows"></Value>
+						<Value Platform="iOS"></Value>
 						<Value Platform="Linux"></Value>
 						<Value Platform="Web"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdLines" Type="string">
 					<ValueList>
+						<Value Platform="Android"></Value>
 						<Value Platform="Mac"></Value>
 						<Value Platform="Windows"></Value>
+						<Value Platform="iOS"></Value>
 						<Value Platform="Linux"></Value>
 						<Value Platform="Web"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdDescription" Type="string">
 					<ValueList>
+						<Value Platform="Android"></Value>
 						<Value Platform="Mac"></Value>
 						<Value Platform="Windows"></Value>
+						<Value Platform="iOS"></Value>
 						<Value Platform="Linux"></Value>
 						<Value Platform="Web"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdLines" Type="string">
 					<ValueList>
+						<Value Platform="Android"></Value>
 						<Value Platform="Mac"></Value>
 						<Value Platform="Windows"></Value>
+						<Value Platform="iOS"></Value>
 						<Value Platform="Linux"></Value>
 						<Value Platform="Web"></Value>
 					</ValueList>
@@ -84,8 +102,10 @@
 				<Property Name="SourceControlGeneratedFiles" Type="bool" Value="True"/>
 				<Property Name="VolumeThreshold" Type="Real64">
 					<ValueList>
+						<Value Platform="Android">-80</Value>
 						<Value Platform="Mac">-80</Value>
 						<Value Platform="Windows">-80</Value>
+						<Value Platform="iOS">-80</Value>
 						<Value Platform="Linux">-80</Value>
 						<Value Platform="Web">-80</Value>
 					</ValueList>

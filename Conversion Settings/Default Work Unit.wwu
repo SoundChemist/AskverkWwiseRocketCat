@@ -7,51 +7,67 @@
 					<PropertyList>
 						<Property Name="Channels" Type="int32">
 							<ValueList>
+								<Value Platform="Android">4</Value>
 								<Value Platform="Mac">4</Value>
 								<Value Platform="Windows">4</Value>
+								<Value Platform="iOS">4</Value>
 								<Value Platform="Linux">4</Value>
 								<Value Platform="Web">4</Value>
 							</ValueList>
 						</Property>
 						<Property Name="LRMix" Type="Real64">
 							<ValueList>
+								<Value Platform="Android">0</Value>
 								<Value Platform="Mac">0</Value>
 								<Value Platform="Windows">0</Value>
+								<Value Platform="iOS">0</Value>
 								<Value Platform="Linux">0</Value>
 								<Value Platform="Web">0</Value>
 							</ValueList>
 						</Property>
 						<Property Name="MaxSampleRate" Type="int32">
 							<ValueList>
+								<Value Platform="Android">48000</Value>
 								<Value Platform="Mac">48000</Value>
 								<Value Platform="Windows">48000</Value>
+								<Value Platform="iOS">48000</Value>
 								<Value Platform="Linux">48000</Value>
 								<Value Platform="Web">48000</Value>
 							</ValueList>
 						</Property>
 						<Property Name="MinSampleRate" Type="int32">
 							<ValueList>
+								<Value Platform="Android">0</Value>
 								<Value Platform="Mac">0</Value>
 								<Value Platform="Windows">0</Value>
+								<Value Platform="iOS">0</Value>
 								<Value Platform="Linux">0</Value>
 								<Value Platform="Web">0</Value>
 							</ValueList>
 						</Property>
 						<Property Name="SampleRate" Type="int32">
 							<ValueList>
+								<Value Platform="Android">0</Value>
 								<Value Platform="Mac">0</Value>
 								<Value Platform="Windows">0</Value>
+								<Value Platform="iOS">0</Value>
 								<Value Platform="Linux">0</Value>
 								<Value Platform="Web">0</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
 					<ConversionPluginInfoList>
+						<ConversionPluginInfo Platform="Android">
+							<ConversionPlugin Name="" ID="{A070758F-755B-4CC1-97E3-2A3CF3D27797}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Mac">
 							<ConversionPlugin Name="" ID="{F36C0B50-4534-470D-8BD5-93359F1D632A}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Windows">
 							<ConversionPlugin Name="" ID="{32ADCD76-474E-4C0A-A779-B1E205038B6D}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="iOS">
+							<ConversionPlugin Name="" ID="{6F0383B3-A335-4698-94C3-D839BE2657E8}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Linux">
 							<ConversionPlugin Name="" ID="{3B15EC27-BFF3-46AD-9D1E-DA0EE7CF46DC}" PluginName="PCM" CompanyID="0" PluginID="1"/>
