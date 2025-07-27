@@ -236,10 +236,10 @@
 						</Event>
 						<Event Name="Play_sfx_int_pickup_ball" ID="{9D8AC5AA-4E8B-483F-80EF-F41D36EBB184}">
 							<ChildrenList>
-								<Action Name="" ID="{B15D9815-FE75-447A-8C89-963616DCA97B}" ShortID="541778772">
+								<Action Name="" ID="{F69CDBF4-5658-490B-B361-CFF738FF894B}" ShortID="462411789">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="sfx_int_pickup_ball" ID="{10B4B7C5-B6D0-4A90-99B3-5C8053B034D6}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+											<ObjectRef Name="sfx_int_pickup_ball" ID="{B70BE11E-6DF7-426B-A56F-D3910B3CAD53}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -272,13 +272,13 @@
 						</Event>
 						<Event Name="Play_sfx_int_collision_ball" ID="{27570E82-4ECA-498B-A3ED-385DE854B74D}">
 							<ChildrenList>
-								<Action Name="" ID="{C54CAE60-B1FB-48A2-8EC3-5D85F32C1BC5}" ShortID="114861110">
+								<Action Name="" ID="{15EF9E19-4368-4498-9988-0F827E3904E5}" ShortID="970171930">
 									<PropertyList>
 										<Property Name="Probability" Type="Real64" Value="30"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="sfx_int_pickup_ball" ID="{10B4B7C5-B6D0-4A90-99B3-5C8053B034D6}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+											<ObjectRef Name="sfx_int_collision_ball" ID="{9C113273-B6FD-4ED3-8228-4B876582FC1E}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
