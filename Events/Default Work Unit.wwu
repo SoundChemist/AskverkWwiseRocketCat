@@ -285,6 +285,8 @@
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_sfx_int_worm_open" ID="{567F7C54-E182-4DBD-AF97-EF8488CEA0BC}">
+							<Comment>blends and playbacks all the sounds
+</Comment>
 							<ChildrenList>
 								<Action Name="" ID="{4E2EDFAB-664B-46EC-A5A4-10494656EC69}" ShortID="380672422">
 									<ReferenceList>
@@ -344,6 +346,73 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Environment" ID="{6D3263F3-B6C9-4CCA-8B9A-F6B136E08FDE}" ShortID="502784049">
+					<ChildrenList>
+						<Event Name="Play_sfx_env_water_rising" ID="{3F200A47-073A-4035-9FDD-B17021CAD018}">
+							<ChildrenList>
+								<Action Name="" ID="{58A5BDAB-7FD1-4421-91C5-3E3BB6B8B728}" ShortID="916362210">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_env_water_rising" ID="{11267553-E6E9-43A8-BC6E-05F1354273DE}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{104E9F8C-3FE3-4429-BB47-9CC50C7CBF95}" ShortID="271147320">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C9E28480-2072-4AA2-8AF1-BA96FE2B8118}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="SeekTime" Type="Real64" Value="3.5">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2ADCE94C-AE90-45AD-AD51-951C9A0E6D7B}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="9"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_env_water_rising" ID="{11267553-E6E9-43A8-BC6E-05F1354273DE}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_sfx_env_water_rising" ID="{A74F92DB-98E1-43A7-83B4-B8F86D78363F}">
+							<ChildrenList>
+								<Action Name="" ID="{2673F485-C1A1-4AA6-9FE0-47E288368792}" ShortID="443528326">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_env_water_rising" ID="{11267553-E6E9-43A8-BC6E-05F1354273DE}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

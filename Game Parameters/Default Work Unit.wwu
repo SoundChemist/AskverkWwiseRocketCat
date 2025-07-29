@@ -12,7 +12,7 @@
 						</GameParameter>
 						<GameParameter Name="RTPC_SFXVolume" ID="{9359A7B1-3582-4850-B3DD-433C0DF9EB9E}">
 							<PropertyList>
-								<Property Name="InitialValue" Type="Real64" Value="75"/>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
 							</PropertyList>
 						</GameParameter>
 						<GameParameter Name="RTPC_MusicVolume" ID="{BD355FBA-C841-481B-A7B5-2AE40B2983E6}">
