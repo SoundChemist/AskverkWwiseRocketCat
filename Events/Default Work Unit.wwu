@@ -16,18 +16,18 @@
 				</Event>
 				<Folder Name="Player" ID="{44623399-08C4-4166-9B57-B30180B5EB30}" ShortID="533701852">
 					<ChildrenList>
-						<Event Name="play_sfx_plr_thrusters_loop" ID="{A33A9A10-5C51-46DF-AC9C-E17DCE7D9ED5}">
+						<Event Name="play_sfx_plr_thrusters_left_loop" ID="{A33A9A10-5C51-46DF-AC9C-E17DCE7D9ED5}">
 							<ChildrenList>
 								<Action Name="" ID="{1904FA53-396B-4D8F-924D-0046DAC230E1}" ShortID="659219572">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="sfx_plr_thrusters_loop" ID="{A4334364-1FA6-4D0B-AC89-15E575FA9DC5}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+											<ObjectRef Name="sfx_plr_thrusters_left_loop" ID="{A4334364-1FA6-4D0B-AC89-15E575FA9DC5}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="stop_sfx_plr_thrusters_loop" ID="{AD23D286-2DC0-41BF-86D7-D7609A0CB93C}">
+						<Event Name="stop_sfx_plr_thrusters_left_loop" ID="{AD23D286-2DC0-41BF-86D7-D7609A0CB93C}">
 							<ChildrenList>
 								<Action Name="" ID="{36B2F980-F374-4955-B3B1-BFD10B11A3C8}" ShortID="444503976">
 									<PropertyList>
@@ -35,7 +35,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="sfx_plr_thrusters_loop" ID="{A4334364-1FA6-4D0B-AC89-15E575FA9DC5}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+											<ObjectRef Name="sfx_plr_thrusters_left_loop" ID="{A4334364-1FA6-4D0B-AC89-15E575FA9DC5}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -118,6 +118,31 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="sfx_plr_grip_hook" ID="{DE3239FB-4E39-4318-8878-B2ACB3D096AD}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="play_sfx_plr_thrusters_right_loop" ID="{DB481B84-156C-47A2-A269-C3FAD8C494FC}">
+							<ChildrenList>
+								<Action Name="" ID="{5012E460-545F-4A52-83A4-F10796A0F651}" ShortID="624371831">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_plr_thrusters_right_loop" ID="{F3999905-6472-402A-A9FC-569A2F95B28A}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stop_sfx_plr_thrusters_right_loop" ID="{F63819C9-98EA-4189-A57A-FCCB45E7DD61}">
+							<ChildrenList>
+								<Action Name="" ID="{C40182B3-F1C0-4046-8E56-5CEE7FEC5103}" ShortID="892079916">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_plr_thrusters_right_loop" ID="{F3999905-6472-402A-A9FC-569A2F95B28A}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
