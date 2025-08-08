@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<ActorMixer Name="Interactable" ID="{855B3269-6CC1-4238-9D9C-757EE5FD98AE}" ShortID="283529540">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Color" Type="int16" Value="12"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Pitch" Type="int32">
@@ -371,7 +371,6 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -485,7 +484,6 @@
 						<Sound Name="sfx_int_collision_key" ID="{F3223EC6-F474-4FC8-B078-83FCECE93D57}" ShortID="664500519">
 							<PropertyList>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -625,7 +623,6 @@
 						<RandomSequenceContainer Name="sfx_int_collision_ball" ID="{9C113273-B6FD-4ED3-8228-4B876582FC1E}" ShortID="562707380">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-2</Value>
@@ -822,7 +819,6 @@
 						<RandomSequenceContainer Name="sfx_int_pickup_ball" ID="{B70BE11E-6DF7-426B-A56F-D3910B3CAD53}" ShortID="390571668">
 							<PropertyList>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
