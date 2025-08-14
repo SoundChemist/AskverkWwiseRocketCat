@@ -1890,6 +1890,9 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Enemy" ID="{5DAF0F5F-343F-4427-8A18-DA195B3F0FE3}" ShortID="295005060">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
@@ -1909,160 +1912,997 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="sfx_enm_boombeye_alerted" ID="{D01CAF14-0085-49E6-BBD9-586661B377F7}" ShortID="321227094">
+								<SwitchContainer Name="sfx_enm_boombeye_switch" ID="{9A3419C7-8477-43F2-8CF4-47B34DCB9AFF}" ShortID="67032944">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
 										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_enm_boombeye_alerted" ID="{2B6AC1A5-55EE-4C4D-8FF2-600EEB39E428}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_enm_boombeye_alerted.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="31047562"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_enm_boombeye_alerted" ID="{2B6AC1A5-55EE-4C4D-8FF2-600EEB39E428}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_enm_boombeye_angriest" ID="{328D0EBC-2030-4B3C-ADD3-D63CD6E1A30A}" ShortID="661874275">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="empty" ID="{F879819A-6E52-407C-9B8E-78E82BC5F2AD}" WorkUnitID="{5EB77562-428F-4F1D-9681-31CB94B28A17}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
 										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_enm_boombeye_angriest" ID="{86ADB0BF-2ED2-48A9-8DB5-E231524FCBDB}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_enm_boombeye_angriest.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="593130689"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_enm_boombeye_angriest" ID="{86ADB0BF-2ED2-48A9-8DB5-E231524FCBDB}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_enm_boombeye_angrier" ID="{46A3FB7A-E072-45F1-88A8-129E6F6A6462}" ShortID="928822497">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="EnmBoombeyeSwitches" ID="{EF6D22E8-FCBE-4194-B475-1D2B9EE57D0C}" WorkUnitID="{5EB77562-428F-4F1D-9681-31CB94B28A17}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="sfx_enm_boombeye_angrier" ID="{44481798-F9C3-40F1-AA9F-8561EC2E7910}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_enm_boombeye_angrier.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="470695414"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<BlendContainer Name="sfx_enm_boombeye_idle" ID="{66EBF717-CD3D-47E6-9366-2608E4C37BD2}" ShortID="502181950">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="enm_boombeye_idle" ID="{18CFCA20-C810-41CE-A861-8048D502968B}" ShortID="184041724">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_enm_boombeye_idle_01" ID="{D9A0C588-AE1B-4860-8E15-EFF2B4369096}" ShortID="225546082">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_idle_01" ID="{56A7BB50-5D85-4484-BF80-9D64ADE072A4}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_idle_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="656596464"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_idle_01" ID="{56A7BB50-5D85-4484-BF80-9D64ADE072A4}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_idle_02" ID="{7C9431A2-5F23-46B3-ACA6-BC67C0CA3860}" ShortID="554031529">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_idle_02" ID="{C9A4AC69-9F14-477C-B0AB-9342B85BDE90}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_idle_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="538419138"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_idle_02" ID="{C9A4AC69-9F14-477C-B0AB-9342B85BDE90}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_idle_03" ID="{68B6F4F9-EE2D-47D7-8784-D5569525FE06}" ShortID="594020222">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_idle_03" ID="{BC9C88D7-3020-4D9C-8027-16F58361865A}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_idle_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="799475525"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_idle_03" ID="{BC9C88D7-3020-4D9C-8027-16F58361865A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_idle_04" ID="{ADF8118A-A2FE-4017-B2D0-4715ADC5DBB2}" ShortID="185215023">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_idle_04" ID="{EAAF3690-3D5D-4BD8-BEEA-F163A294F3F1}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_idle_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="456698235"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_idle_04" ID="{EAAF3690-3D5D-4BD8-BEEA-F163A294F3F1}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_idle_05" ID="{6E22DD48-06C0-4700-A3EA-C8BF3C4E95D9}" ShortID="486164226">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_idle_05" ID="{F444BC09-0070-4466-A0E9-D61196040733}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_idle_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="247722764"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_idle_05" ID="{F444BC09-0070-4466-A0E9-D61196040733}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="sfx_enm_boombeye_alerted" ID="{1031B264-A20D-46CB-B0D3-70D6EF84BAD9}" ShortID="175949388">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="enm_boombeye_alerted" ID="{F2F80446-EFCF-4FC4-B4BC-3513D75D7961}" ShortID="672194306">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_enm_boombeye_alerted_01" ID="{50D81B8B-8F9F-4011-84A3-04D2E6EF85E1}" ShortID="321610582">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_alerted_01" ID="{876C2992-128D-4E06-97AA-4434BB641A51}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.015074215258759"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_alerted_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="982021691"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_alerted_01" ID="{876C2992-128D-4E06-97AA-4434BB641A51}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_alerted_02" ID="{2791B390-2D26-49EF-B870-974193D2835E}" ShortID="137963986">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_alerted_02" ID="{FB14319F-F569-4FF4-8295-19C0CB36C0B4}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0141789293654377"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_alerted_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="218156965"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_alerted_02" ID="{FB14319F-F569-4FF4-8295-19C0CB36C0B4}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_alerted_03" ID="{0D2DD692-A461-44CA-8B05-4C6F4DE05BDC}" ShortID="798204210">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_alerted_03" ID="{4C0397AC-7F8D-48AD-8045-D3A5C1D71D37}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0142013126703008"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_alerted_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1010760029"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_alerted_03" ID="{4C0397AC-7F8D-48AD-8045-D3A5C1D71D37}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_alerted_04" ID="{E7195C6D-51AB-430C-9E36-63B97977D59C}" ShortID="843125797">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_alerted_04" ID="{33B9A30C-6020-4D4B-8E34-AC95F2DCF912}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0146783362071415"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_alerted_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="881286204"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_alerted_04" ID="{33B9A30C-6020-4D4B-8E34-AC95F2DCF912}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_alerted_05" ID="{3C4F329A-D6D9-4085-ABF7-053C6ECA58CC}" ShortID="545354123">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_alerted_05" ID="{FA709129-74BC-4A22-B13B-9EDEE36061B3}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0271348927161887"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_alerted_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="514677078"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_alerted_05" ID="{FA709129-74BC-4A22-B13B-9EDEE36061B3}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_alerted_06" ID="{EF432634-CE74-4609-A417-EA3F71EA8A59}" ShortID="261768382">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_alerted_06" ID="{692E1687-669C-4681-9182-C25DDA69910F}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0249872816078512"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_alerted_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="830284985"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_alerted_06" ID="{692E1687-669C-4681-9182-C25DDA69910F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="sfx_enm_boombeye_annoyed" ID="{AD0DDDA3-40BA-4544-A050-02EF3FEE2410}" ShortID="128828825">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="New Sequence Container" ID="{76FF438F-427F-4BA8-892F-DAB5C1FA5B42}" ShortID="440747819">
+													<PropertyList>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="New Random Container" ID="{826DD176-6464-47F4-AF50-32D3BC4B4A67}" ShortID="20039989">
+													<PropertyList>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_enm_boombeye_annoyed_06" ID="{C9FD4426-7C66-400D-8D0A-35A4EB859B94}" ShortID="544447151">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_annoyed_06" ID="{7368DF6C-FBA8-45F1-97D6-91B46CFCD7C2}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_annoyed_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1065609934"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_annoyed_06" ID="{7368DF6C-FBA8-45F1-97D6-91B46CFCD7C2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_annoyed_07" ID="{738A680B-C3E3-4BA4-AFAF-79A69FFE1AA3}" ShortID="981448422">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_annoyed_07" ID="{84D4757E-EC2D-4027-B484-F343366F6909}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_annoyed_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="594850688"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_annoyed_07" ID="{84D4757E-EC2D-4027-B484-F343366F6909}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_annoyed_04" ID="{65C3297D-C7BA-4C9D-9E2A-9CCA410D2327}" ShortID="315359444">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_annoyed_04" ID="{8185881F-6386-41FA-A190-05EBFA329BE1}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_annoyed_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="417786774"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_annoyed_04" ID="{8185881F-6386-41FA-A190-05EBFA329BE1}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_annoyed_05" ID="{921A01A2-26D1-49BA-8BC6-D8C2B18EBE0C}" ShortID="110730915">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_annoyed_05" ID="{135C4C48-C6C7-4BAA-A790-8E2392087496}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_annoyed_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="589360631"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_annoyed_05" ID="{135C4C48-C6C7-4BAA-A790-8E2392087496}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_annoyed_03" ID="{DA1364F8-70E2-4BE4-BD5B-400D816340FC}" ShortID="747763048">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_annoyed_03" ID="{E6D42720-B944-43AC-A17F-D128E510F7A1}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_annoyed_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="572392868"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_annoyed_03" ID="{E6D42720-B944-43AC-A17F-D128E510F7A1}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_annoyed_01" ID="{F52C4D41-6DA8-4846-A1C3-649D88622272}" ShortID="441599518">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_annoyed_01" ID="{5287D791-A83D-4CE2-9F79-8E3BBF8848A4}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_annoyed_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="394474639"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_annoyed_01" ID="{5287D791-A83D-4CE2-9F79-8E3BBF8848A4}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_annoyed_02" ID="{A1D2A999-1DBE-4494-94B5-15602DE8A9CA}" ShortID="753611771">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_annoyed_02" ID="{F43BB201-10B8-43F2-9903-C8BFB06E5831}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_annoyed_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="756555543"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_annoyed_02" ID="{F43BB201-10B8-43F2-9903-C8BFB06E5831}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="sfx_enm_boombeye_angry" ID="{2D3476F8-3A54-4BD4-832D-729AFDD19170}" ShortID="604834890">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="enm_boombeye_angry" ID="{63549FF6-2730-4B50-84DB-0FD6E0B1B756}" ShortID="701871125">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_enm_boombeye_angry_01" ID="{B8BC68AE-7491-4974-914A-669D1B0A29C0}" ShortID="753477681">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_angry_01" ID="{42DC9F82-F934-4E79-B6B1-BB24B561BD19}">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="147.442"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="1.015"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="2.161"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_angry_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="358299975"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_angry_01" ID="{42DC9F82-F934-4E79-B6B1-BB24B561BD19}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_angry_02" ID="{01B3902F-9489-43EE-B8B1-1535C28351C6}" ShortID="176838910">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_angry_02" ID="{52DE354B-39B2-4E4D-A3B0-16539025F263}">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="188.28"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0.462"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="2.56375"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_angry_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="6928903"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_angry_02" ID="{52DE354B-39B2-4E4D-A3B0-16539025F263}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="sfx_enm_boombeye_angier" ID="{FF5FF9E6-9E63-4A96-8C5B-A89F10A0694B}" ShortID="725344052">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="enm_boombeye_angrier" ID="{F7567B73-37C0-44BF-82C0-4674431F1D21}" ShortID="375621045">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_enm_boombeye_angrier_01" ID="{552428DE-DCFC-4DA8-B2F4-94AF80E1202C}" ShortID="356408021">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_angrier_01" ID="{72B3AE77-D4E6-4022-928A-CA2294BB8A1A}">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="117.948"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0.616"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="3.139"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_angrier_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="398228096"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_angrier_01" ID="{72B3AE77-D4E6-4022-928A-CA2294BB8A1A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_angrier_02" ID="{F6CEB2FE-8F67-4661-9BD1-5142F0B39311}" ShortID="308102772">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_angrier_02" ID="{6604C5DC-4AE2-4994-BFD0-8C440BB958F5}">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="155.179"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0.403"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="2.307"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_angrier_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1028566975"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_angrier_02" ID="{6604C5DC-4AE2-4994-BFD0-8C440BB958F5}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="sfx_enm_boombeye_angriest" ID="{13DC68E7-08F4-4893-AE53-BE0DB27CA788}" ShortID="598327878">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="enm_boombeye_angriest" ID="{55B384FB-0DF1-4BB8-86C0-15D3E4A96B3A}" ShortID="149497449">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_enm_boombeye_angriest_01" ID="{DA36B216-F952-4039-8EF8-7F47E93B92BB}" ShortID="911865725">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_angriest_01" ID="{558E68D7-1389-4692-A7D9-229399A231E3}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_angriest_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="63727117"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_angriest_01" ID="{558E68D7-1389-4692-A7D9-229399A231E3}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_angriest_02" ID="{D02AA271-2DB8-4418-B670-3385D1B63931}" ShortID="978830414">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_angriest_02" ID="{48D7FB94-9829-4D6F-BA99-8E49DF3770FE}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_angriest_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1027573607"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_angriest_02" ID="{48D7FB94-9829-4D6F-BA99-8E49DF3770FE}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_angriest_03" ID="{BFABB720-D479-4270-A195-D01A46E3C573}" ShortID="56117599">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_angriest_03" ID="{219ACBB0-0EAB-4BC1-989E-BDD8A0ED83BA}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_angriest_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="551446584"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_angriest_03" ID="{219ACBB0-0EAB-4BC1-989E-BDD8A0ED83BA}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_angriest_04" ID="{CE11AE57-DAA1-46B9-8E09-D235B063596B}" ShortID="39239024">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_angriest_04" ID="{11024F48-F29E-431F-A0CB-33A24CD2614B}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_angriest_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="751838989"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_angriest_04" ID="{11024F48-F29E-431F-A0CB-33A24CD2614B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="sfx_enm_boombeye_angriest_05" ID="{C3F086C8-F60B-4D05-BD00-A8B37F5EADF7}" ShortID="95307336">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_angriest_05" ID="{20E1CE64-8C54-421B-A98B-ADF315BCFB11}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_angriest_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="602840312"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_angriest_05" ID="{20E1CE64-8C54-421B-A98B-ADF315BCFB11}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="sfx_enm_boombeye_explode" ID="{76C2D99B-7989-4525-9206-77AAAF0BD338}" ShortID="41326412">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="enm_boombeye_explode" ID="{D483CCDC-20F1-4514-9D69-B75CC43FFA5B}" ShortID="179856724">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_enm_boombeye_explode" ID="{7C84B475-5992-4D02-B615-1A084FC4B8D9}" ShortID="55091024">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_enm_boombeye_explode" ID="{B01076E5-81F5-49E2-A776-72EE6B71EED9}">
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_enm_boombeye_explode.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="647756649"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_enm_boombeye_explode" ID="{B01076E5-81F5-49E2-A776-72EE6B71EED9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_enm_boombeye_angrier" ID="{44481798-F9C3-40F1-AA9F-8561EC2E7910}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_enm_boombeye_angry" ID="{02C359BB-4BA7-4984-BADB-09459CD255EF}" ShortID="981800499">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_enm_boombeye_angry" ID="{FDBAA8C8-768B-4D8A-B84D-8BC0C62C9A16}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_enm_boombeye_angry.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="959341075"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_enm_boombeye_angry" ID="{FDBAA8C8-768B-4D8A-B84D-8BC0C62C9A16}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_enm_boombeye_annoyed" ID="{108C1889-65A5-47FA-924B-E0FB70C5E36F}" ShortID="187196157">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_enm_boombeye_annoyed" ID="{B87AE2EB-08A1-4F9E-8A65-281550EB12D8}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_enm_boombeye_annoyed.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="62318542"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_enm_boombeye_annoyed" ID="{B87AE2EB-08A1-4F9E-8A65-281550EB12D8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_enm_boombeye_explode" ID="{492DE1F0-2C88-42A9-9E7F-51B802528858}" ShortID="830797759">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_enm_boombeye_explode" ID="{194172AF-0D74-409C-BBC5-CA91C3FC11AD}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_enm_boombeye_explode.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="647756649"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_enm_boombeye_explode" ID="{194172AF-0D74-409C-BBC5-CA91C3FC11AD}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_enm_boombeye_idle" ID="{AC939FE8-20EC-4269-A29B-2624D0042469}" ShortID="505985970">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_enm_boombeye_idle" ID="{E62004C1-89C0-4B4B-B89D-D3F5CB0C6E49}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_enm_boombeye_idle.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="964753299"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_enm_boombeye_idle" ID="{E62004C1-89C0-4B4B-B89D-D3F5CB0C6E49}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_enm_boombeye_idle" ID="{66EBF717-CD3D-47E6-9366-2608E4C37BD2}"/>
+												<PropertyList>
+													<Property Name="ContinuePlay" Type="bool" Value="True"/>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_enm_boombeye_alerted" ID="{1031B264-A20D-46CB-B0D3-70D6EF84BAD9}"/>
+												<PropertyList>
+													<Property Name="ContinuePlay" Type="bool" Value="True"/>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_enm_boombeye_explode" ID="{76C2D99B-7989-4525-9206-77AAAF0BD338}"/>
+												<PropertyList>
+													<Property Name="ContinuePlay" Type="bool" Value="True"/>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_enm_boombeye_annoyed" ID="{AD0DDDA3-40BA-4544-A050-02EF3FEE2410}"/>
+												<PropertyList>
+													<Property Name="ContinuePlay" Type="bool" Value="True"/>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_enm_boombeye_angier" ID="{FF5FF9E6-9E63-4A96-8C5B-A89F10A0694B}"/>
+												<PropertyList>
+													<Property Name="ContinuePlay" Type="bool" Value="True"/>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_enm_boombeye_angriest" ID="{13DC68E7-08F4-4893-AE53-BE0DB27CA788}"/>
+												<PropertyList>
+													<Property Name="ContinuePlay" Type="bool" Value="True"/>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_enm_boombeye_angry" ID="{2D3476F8-3A54-4BD4-832D-729AFDD19170}"/>
+												<PropertyList>
+													<Property Name="ContinuePlay" Type="bool" Value="True"/>
+												</PropertyList>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="angry" ID="{2E6A881F-69BB-4BE9-A096-5FC3480686AF}"/>
+												<ItemList>
+													<ItemRef Name="sfx_enm_boombeye_angry" ID="{2D3476F8-3A54-4BD4-832D-729AFDD19170}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="idle" ID="{9279754F-B755-4F91-8D2C-A4E12305FFFC}"/>
+												<ItemList>
+													<ItemRef Name="sfx_enm_boombeye_idle" ID="{66EBF717-CD3D-47E6-9366-2608E4C37BD2}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="explode" ID="{7B39F881-FE30-49FC-9255-CA58C5B16BCF}"/>
+												<ItemList>
+													<ItemRef Name="sfx_enm_boombeye_explode" ID="{76C2D99B-7989-4525-9206-77AAAF0BD338}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="angriest" ID="{3C735584-E241-4895-84FD-E50A6219C4E3}"/>
+												<ItemList>
+													<ItemRef Name="sfx_enm_boombeye_angriest" ID="{13DC68E7-08F4-4893-AE53-BE0DB27CA788}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="annoyed" ID="{8AD02789-B557-4F74-8395-8F5E7366F568}"/>
+												<ItemList>
+													<ItemRef Name="sfx_enm_boombeye_annoyed" ID="{AD0DDDA3-40BA-4544-A050-02EF3FEE2410}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="alerted" ID="{C61D688A-8446-4957-8BD7-E69A21C8DF97}"/>
+												<ItemList>
+													<ItemRef Name="sfx_enm_boombeye_alerted" ID="{1031B264-A20D-46CB-B0D3-70D6EF84BAD9}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="angrier" ID="{3CC2AD92-50D9-4630-AD36-021312EA1221}"/>
+												<ItemList>
+													<ItemRef Name="sfx_enm_boombeye_angier" ID="{FF5FF9E6-9E63-4A96-8C5B-A89F10A0694B}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5EB77562-428F-4F1D-9681-31CB94B28A17}" SchemaVersion="123">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{5EB77562-428F-4F1D-9681-31CB94B28A17}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5EB77562-428F-4F1D-9681-31CB94B28A17}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="EnmBoombeyeSwitches" ID="{EF6D22E8-FCBE-4194-B475-1D2B9EE57D0C}">
+					<ChildrenList>
+						<Switch Name="idle" ID="{9279754F-B755-4F91-8D2C-A4E12305FFFC}"/>
+						<Switch Name="alerted" ID="{C61D688A-8446-4957-8BD7-E69A21C8DF97}"/>
+						<Switch Name="annoyed" ID="{8AD02789-B557-4F74-8395-8F5E7366F568}"/>
+						<Switch Name="angry" ID="{2E6A881F-69BB-4BE9-A096-5FC3480686AF}"/>
+						<Switch Name="angrier" ID="{3CC2AD92-50D9-4630-AD36-021312EA1221}"/>
+						<Switch Name="angriest" ID="{3C735584-E241-4895-84FD-E50A6219C4E3}"/>
+						<Switch Name="explode" ID="{7B39F881-FE30-49FC-9255-CA58C5B16BCF}"/>
+						<Switch Name="empty" ID="{F879819A-6E52-407C-9B8E-78E82BC5F2AD}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

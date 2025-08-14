@@ -442,78 +442,15 @@
 					<ChildrenList>
 						<Folder Name="Boombeye" ID="{A12427E9-6B29-422E-B467-01F15CC43E27}" ShortID="349179763">
 							<ChildrenList>
-								<Event Name="Play_sfx_enm_boombeye_alerted" ID="{3E9D74A7-71AF-44EF-8168-1E109EF30D1E}">
+								<Event Name="Play_sfx_enm_boombeye_switch" ID="{C39EA31B-02C6-47C9-AC3E-2ADA69B6C3C0}">
+									<Comment>has empty switch with no sound as default = this is played when boombeye is on map. 
+
+the switch group has "Play Mode" "Continious" activated and each switch in the switch cointainer has "Continue Playing" checked. = its like the switch container is always on and will get stopped when game object is destroyed. you did it like this because you only want to trigger event once and have it active and switch the states in godot. </Comment>
 									<ChildrenList>
-										<Action Name="" ID="{3AF3F3E7-30A1-475F-89F1-470CCB572A23}" ShortID="959123404">
+										<Action Name="" ID="{55A3A36B-9CA2-4EC0-B0C4-3288FE30DCFE}" ShortID="904441911">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="sfx_enm_boombeye_alerted" ID="{D01CAF14-0085-49E6-BBD9-586661B377F7}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_sfx_enm_boombeye_angriest" ID="{DB3A3074-DE1C-451E-8130-5807F617BCA1}">
-									<ChildrenList>
-										<Action Name="" ID="{57B9C5F1-C5EC-4FF6-AE88-1E065CD50C0C}" ShortID="42867136">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="sfx_enm_boombeye_angriest" ID="{328D0EBC-2030-4B3C-ADD3-D63CD6E1A30A}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_sfx_enm_boombeye_angrier" ID="{0F9CFCAE-CFE4-4CB1-8362-A09227B6BB7D}">
-									<ChildrenList>
-										<Action Name="" ID="{7183DE02-82FF-4145-8B22-E78EC2A5E5E2}" ShortID="490930100">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="sfx_enm_boombeye_angrier" ID="{46A3FB7A-E072-45F1-88A8-129E6F6A6462}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_sfx_enm_boombeye_annoyed" ID="{618F1B3C-0F4D-435F-84D8-5A68EAEC0154}">
-									<ChildrenList>
-										<Action Name="" ID="{B2ED9F41-9B40-4DB9-BA5F-144ABF0BEEEC}" ShortID="95187573">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="sfx_enm_boombeye_annoyed" ID="{108C1889-65A5-47FA-924B-E0FB70C5E36F}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_sfx_enm_boombeye_explode" ID="{9A3B5026-A0E0-4229-9E08-F413E7E4804E}">
-									<ChildrenList>
-										<Action Name="" ID="{BD605230-E210-4D20-9A3F-770EB369497F}" ShortID="527300032">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="sfx_enm_boombeye_explode" ID="{492DE1F0-2C88-42A9-9E7F-51B802528858}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_sfx_enm_boombeye_idle" ID="{BE293F3A-0034-4F48-B00B-F29EACE591AC}">
-									<ChildrenList>
-										<Action Name="" ID="{44E88423-93E2-4B23-8346-3F48D82F35A7}" ShortID="859266775">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="sfx_enm_boombeye_idle" ID="{AC939FE8-20EC-4269-A29B-2624D0042469}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_sfx_enm_boombeye_angry" ID="{587E69C9-2FD5-4ECF-A1A8-F9B0608F5182}">
-									<ChildrenList>
-										<Action Name="" ID="{0F97C3E7-F1A0-4613-815D-4AB1B20FDE3C}" ShortID="601650917">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="sfx_enm_boombeye_angry" ID="{02C359BB-4BA7-4984-BADB-09459CD255EF}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+													<ObjectRef Name="sfx_enm_boombeye_switch" ID="{9A3419C7-8477-43F2-8CF4-47B34DCB9AFF}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
