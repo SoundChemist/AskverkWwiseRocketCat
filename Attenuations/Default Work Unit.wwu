@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{4CB9003F-D58A-40BF-8B9A-24579ACC3B84}" PersistMode="Standalone">
 			<ChildrenList>
 				<Attenuation Name="ATT_item" ID="{B39019B4-F2A0-49ED-B6DC-599A621A25E1}" ShortID="413561806">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="1500"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -18,7 +21,12 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>1044.16958</XPos>
+											<YPos>0</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>1500</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -83,6 +91,9 @@
 					</CurveUsageInfoList>
 				</Attenuation>
 				<Attenuation Name="ATT_enemy" ID="{7CE8C593-B2BF-468C-938E-7C0DE82FFB94}" ShortID="35927614">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="10"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -97,7 +108,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>10</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
