@@ -368,8 +368,18 @@
 						<Action Name="" ID="{233FA549-DE28-4609-BC26-0CD5AE2D5C5E}" ShortID="1064130918">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList/>
+							<ChildrenList>
+								<EventActionException Name="" ID="{FDD06D74-8741-430D-962F-EAEA2437A297}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="level1progression" ID="{A910A2A2-7C19-42CD-8099-7278D38D8473}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+							</ChildrenList>
 						</Action>
 					</ChildrenList>
 				</Event>
