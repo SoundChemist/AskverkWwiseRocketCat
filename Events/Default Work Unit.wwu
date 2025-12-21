@@ -448,6 +448,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_sfx_env_entrance_spitter" ID="{177A33F4-E56E-4040-80B4-C674F2D14544}">
+							<ChildrenList>
+								<Action Name="" ID="{544C21CC-C933-4B95-B033-3656B0D00D7E}" ShortID="834224734">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="entrance" ID="{E4545BA5-6DE5-453A-9E76-31762AB00ACE}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enemy" ID="{B085EDE5-7AE5-43BE-8EE3-0842E537A682}" ShortID="117292923">

@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{2223BB20-6A69-4BB6-AF7B-30C0D6E66AFA}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_sfx_env_water_rising" ID="{3F200A47-073A-4035-9FDD-B17021CAD018}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_env_entrance_spitter" ID="{177A33F4-E56E-4040-80B4-C674F2D14544}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="mx_mainmenu" ID="{05F088F5-CEBA-40D7-8530-8AB5102535F0}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_plr_dead_spike" ID="{A2284449-8ED1-411C-9768-459B02FC60F4}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_sfx_plr_thrusters_right_loop" ID="{F63819C9-98EA-4189-A57A-FCCB45E7DD61}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
