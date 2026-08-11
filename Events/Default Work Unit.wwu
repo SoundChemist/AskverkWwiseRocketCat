@@ -346,6 +346,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_sfx_int_photoscreen_drop" ID="{15A05AA3-26F8-4F44-AF7D-FC813CF94439}">
+							<ChildrenList>
+								<Action Name="" ID="{E1F63BDB-B9FE-40B6-A225-52A873ADAB93}" ShortID="521718819">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_env_photodude_screen_drop" ID="{B79E31E3-0F41-4B44-89F7-46963B6B62EB}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_sfx_int_photognome_switch" ID="{E858A214-0249-4DB1-8E28-62E0E7E1F989}">
+							<ChildrenList>
+								<Action Name="" ID="{8660DCBF-A2BE-4616-9025-B4D9B69088E3}" ShortID="841426284">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_env_photodude_switch" ID="{76DA173B-180C-4532-8903-418B850B75B9}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="State" ID="{6F148457-9119-4F94-B9F8-6A5914A20136}" ShortID="213422169">

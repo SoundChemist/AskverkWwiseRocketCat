@@ -15,6 +15,16 @@
 						<Switch Name="empty" ID="{F879819A-6E52-407C-9B8E-78E82BC5F2AD}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="IntPhotognomeSwitches" ID="{CA34A360-3634-4B36-9A2D-4918AF6DE9B2}">
+					<ChildrenList>
+						<Switch Name="idle" ID="{98B992C2-FB8C-4697-B32B-481C3570DB4D}"/>
+						<Switch Name="walk_left" ID="{0BC698F3-36CD-4465-AD94-96BFEB37EE4E}"/>
+						<Switch Name="walk_right" ID="{3C6D570E-369D-4CC2-A8B4-64761D92CD62}"/>
+						<Switch Name="stop" ID="{305CAF2F-72F9-43FB-B808-DF6D1D7E27A2}"/>
+						<Switch Name="take_photo" ID="{8E390453-DA2A-46CE-B63B-42853C3AD1DA}"/>
+						<Switch Name="screen_drop" ID="{C4748CF3-20B5-4810-9A91-F696549B1DEF}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

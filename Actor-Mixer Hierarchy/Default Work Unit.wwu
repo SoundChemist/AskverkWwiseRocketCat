@@ -999,6 +999,311 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<ActorMixer Name="photodude" ID="{E76903B0-3937-4FC8-B7E7-B4DEA6682E2E}" ShortID="775578709">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="sfx_env_photodude_switch" ID="{76DA173B-180C-4532-8903-418B850B75B9}" ShortID="522697511">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_enemy" ID="{7CE8C593-B2BF-468C-938E-7C0DE82FFB94}" WorkUnitID="{4CB9003F-D58A-40BF-8B9A-24579ACC3B84}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="idle" ID="{98B992C2-FB8C-4697-B32B-481C3570DB4D}" WorkUnitID="{5EB77562-428F-4F1D-9681-31CB94B28A17}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="IntPhotognomeSwitches" ID="{CA34A360-3634-4B36-9A2D-4918AF6DE9B2}" WorkUnitID="{5EB77562-428F-4F1D-9681-31CB94B28A17}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="sfx_env_photodude_guide" ID="{D5DEA8F5-9D0B-4D50-A45C-883566C65987}" ShortID="583721476">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="4"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="guide" ID="{4104376A-E8A1-44D4-909F-25F4A6CBFCFB}" ShortID="292650908">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.1</Value>
+															</ValueList>
+														</Property>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="env_hoverarea_takephoto_vo_guide_loop" ID="{527D0322-BFE1-4079-BDEC-9C3C7180A335}">
+															<Language>SFX</Language>
+															<AudioFile>env_hoverarea_takephoto_vo_guide_loop.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="97021061"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="env_hoverarea_takephoto_vo_guide_loop" ID="{527D0322-BFE1-4079-BDEC-9C3C7180A335}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="sfx_env_photodude_hold" ID="{758B491C-6FAB-4ABD-BAAD-CA334970CD10}" ShortID="150150836">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="BlendBehavior" Type="int16" Value="1"/>
+												<Property Name="Color" Type="int16" Value="4"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="hold" ID="{496F286A-A4D1-42BE-9607-09F8CBBE7624}" ShortID="760695240">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.1</Value>
+															</ValueList>
+														</Property>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="env_hoverarea_takephoto_vo_hold_loop" ID="{B789D7AF-E090-4C60-BFFE-5478F3A6ABDE}">
+															<Language>SFX</Language>
+															<AudioFile>env_hoverarea_takephoto_vo_hold_loop.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="606488617"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="env_hoverarea_takephoto_vo_hold_loop" ID="{B789D7AF-E090-4C60-BFFE-5478F3A6ABDE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+										<BlendContainer Name="sfx_env_photodude_takephoto" ID="{847A9335-4C13-417A-B159-0BE7CB581DC0}" ShortID="844459782">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="4"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="goodbye" ID="{D8F20703-BC6D-4FB2-8E1E-B69760117810}" ShortID="38284199">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>1.3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATT_enemy" ID="{7CE8C593-B2BF-468C-938E-7C0DE82FFB94}" WorkUnitID="{4CB9003F-D58A-40BF-8B9A-24579ACC3B84}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="env_hoverarea_takephoto_vo_goodbye" ID="{0C52FD4E-A81C-42BD-B024-D30033276207}">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+																</Reference>
+															</ReferenceList>
+															<Language>SFX</Language>
+															<AudioFile>env_hoverarea_takephoto_vo_goodbye.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="703734412"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="env_hoverarea_takephoto_vo_goodbye" ID="{0C52FD4E-A81C-42BD-B024-D30033276207}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="photo" ID="{4C726EA7-BF45-464B-9381-1455B55CA8C5}" ShortID="643454476">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="ATT_enemy" ID="{7CE8C593-B2BF-468C-938E-7C0DE82FFB94}" WorkUnitID="{4CB9003F-D58A-40BF-8B9A-24579ACC3B84}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="env_hoverarea_takephoto_camera" ID="{C07601C3-2D4F-469A-AE57-7F1A03F55186}">
+															<Language>SFX</Language>
+															<AudioFile>env_hoverarea_takephoto_camera.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="268276576"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="env_hoverarea_takephoto_camera" ID="{C07601C3-2D4F-469A-AE57-7F1A03F55186}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_env_photodude_hold" ID="{758B491C-6FAB-4ABD-BAAD-CA334970CD10}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_env_photodude_takephoto" ID="{847A9335-4C13-417A-B159-0BE7CB581DC0}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_env_photodude_guide" ID="{D5DEA8F5-9D0B-4D50-A45C-883566C65987}"/>
+												<PropertyList>
+													<Property Name="ContinuePlay" Type="bool" Value="True"/>
+												</PropertyList>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="walk_right" ID="{3C6D570E-369D-4CC2-A8B4-64761D92CD62}"/>
+												<ItemList>
+													<ItemRef Name="sfx_env_photodude_guide" ID="{D5DEA8F5-9D0B-4D50-A45C-883566C65987}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="stop" ID="{305CAF2F-72F9-43FB-B808-DF6D1D7E27A2}"/>
+												<ItemList>
+													<ItemRef Name="sfx_env_photodude_hold" ID="{758B491C-6FAB-4ABD-BAAD-CA334970CD10}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="take_photo" ID="{8E390453-DA2A-46CE-B63B-42853C3AD1DA}"/>
+												<ItemList>
+													<ItemRef Name="sfx_env_photodude_takephoto" ID="{847A9335-4C13-417A-B159-0BE7CB581DC0}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="walk_left" ID="{0BC698F3-36CD-4465-AD94-96BFEB37EE4E}"/>
+												<ItemList>
+													<ItemRef Name="sfx_env_photodude_guide" ID="{D5DEA8F5-9D0B-4D50-A45C-883566C65987}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<Sound Name="sfx_env_photodude_screen_drop" ID="{B79E31E3-0F41-4B44-89F7-46963B6B62EB}" ShortID="775900903">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATT_enemy" ID="{7CE8C593-B2BF-468C-938E-7C0DE82FFB94}" WorkUnitID="{4CB9003F-D58A-40BF-8B9A-24579ACC3B84}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="env_hoverarea_takephoto_screen" ID="{9AECA617-FEAC-4E55-AE2E-3AAE2635201A}">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+											</ReferenceList>
+											<Language>SFX</Language>
+											<AudioFile>env_hoverarea_takephoto_screen.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="935191579"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="env_hoverarea_takephoto_screen" ID="{9AECA617-FEAC-4E55-AE2E-3AAE2635201A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Player" ID="{CF718E85-51C8-4898-B45B-2CBEC12F8BF2}" ShortID="634379949">
