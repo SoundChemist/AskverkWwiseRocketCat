@@ -368,6 +368,40 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_sfx_int_photoscreen_lights_reset" ID="{9655BCE6-18EA-4976-B972-95D71E49D4B4}">
+							<Comment>the reset playlist is for the lights on sequence container. PS the sequence container scope has to be set as object instead of default global
+</Comment>
+							<ChildrenList>
+								<Action Name="" ID="{9578900D-3ED3-43AF-A758-69294A16F97A}" ShortID="351051846">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_int_photodude_lights_off" ID="{74E3B923-84BD-402B-AC35-99566A803175}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8E3DFA75-F26D-4009-B36D-C3D99A50AC03}" ShortID="270406950">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="42"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_int_photodude_lights_on" ID="{76E04CE6-9363-45F0-8675-FCBAFEA0B42D}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_sfx_int_photoscreen_light_on" ID="{F3995EE6-B7C0-4A2D-AB4C-598BF9290FF3}">
+							<ChildrenList>
+								<Action Name="" ID="{2C854FAA-84E9-420E-AEC7-1BD78DCF0E2F}" ShortID="523043221">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_int_photodude_lights_on" ID="{76E04CE6-9363-45F0-8675-FCBAFEA0B42D}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="State" ID="{6F148457-9119-4F94-B9F8-6A5914A20136}" ShortID="213422169">
