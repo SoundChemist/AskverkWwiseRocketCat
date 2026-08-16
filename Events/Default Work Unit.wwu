@@ -150,6 +150,24 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_sfx_plr_dead_crushed" ID="{289B448A-5016-4A9A-AFEB-29B1EF7DA18D}">
+							<ChildrenList>
+								<Action Name="" ID="{5B6E94F1-F0B0-4FF8-B853-FBF66A3E1AF2}" ShortID="698242023">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="dead_crushed" ID="{ECAB793C-CD0E-44DB-9514-9CAE5967252F}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6A462EB6-D102-429B-B83B-78A06F266DAF}" ShortID="551208310">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="dead_cow" ID="{40806DAD-A669-4224-AE31-F02EFF3B7075}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{62443B06-A096-48F5-B82C-55D86D20F778}" ShortID="782262445">
@@ -402,6 +420,50 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_sfx_int_bottle_impact" ID="{2D7759E8-5899-416B-AE13-1F88E1C2EB8A}">
+							<ChildrenList>
+								<Action Name="" ID="{F58C4FDA-A7E1-4889-B70E-DDF1E652E49E}" ShortID="769247741">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_int_bottle_impact" ID="{75B1CDE7-3078-44F5-8E58-9C477DA8DB6C}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_sfx_int_fly_activate" ID="{30899A1C-0686-4C1D-A763-3F95B1E6D22A}">
+							<ChildrenList>
+								<Action Name="" ID="{EC1F251D-297F-48E1-82A1-03DA3F1E7032}" ShortID="212450367">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_int_fly_activate" ID="{6FCEF0A6-BDE5-4B50-98B2-F840024131DF}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_sfx_int_cup_impact" ID="{19FC59B0-6DBB-4391-9662-23C67B30D07A}">
+							<ChildrenList>
+								<Action Name="" ID="{348F0EC0-9054-491D-80A7-CF077077972A}" ShortID="432722188">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_int_cup_impact" ID="{D9687C6C-A86F-432F-BFEB-B64AE7C7C8B8}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_sfx_int_pot_impact" ID="{2E8ACBF2-8BD0-4366-A831-03BDA5661180}">
+							<ChildrenList>
+								<Action Name="" ID="{AB596D58-CE0A-46F0-B84D-BDBB4971731A}" ShortID="459530757">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_int_pot_impact" ID="{0A191724-3FEB-4C63-8353-8F05279ECCB7}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="State" ID="{6F148457-9119-4F94-B9F8-6A5914A20136}" ShortID="213422169">
@@ -527,6 +589,17 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{E5AB63C1-74D1-419A-99DF-FA28F02FF641}" ShortID="994694909">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="impact_dirt" ID="{8E1C1596-B725-45C6-907B-52354DABCD2D}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>
@@ -551,6 +624,98 @@ the switch group has "Play Mode" "Continious" activated and each switch in the s
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Mangler" ID="{700D4384-037A-4CD1-B411-42081F873FD3}" ShortID="418555565">
+							<ChildrenList>
+								<Event Name="Play_sfx_enm_mangler_forward" ID="{DDA041A7-738F-459A-980A-7606F141CF9B}">
+									<ChildrenList>
+										<Action Name="" ID="{9C7300D8-5330-48F6-98EE-C93E249A75F4}" ShortID="243472203">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_enm_mangler_backward" ID="{86CA4750-7DED-4F51-9C03-0080D6BD68E1}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{E53A9B03-035F-4466-8638-ECE5CB84DAA1}" ShortID="79447348">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_enm_mangler_forward" ID="{3C5DB1A3-8219-4CDF-8C91-641A468B0CA4}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_sfx_enm_mangler_backward" ID="{D9954DBC-BC09-4441-8FD6-502DE2841E7F}">
+									<ChildrenList>
+										<Action Name="" ID="{CBBC23B9-54C7-4D92-B7FE-EFA680FA6919}" ShortID="210500380">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_enm_mangler_backward" ID="{86CA4750-7DED-4F51-9C03-0080D6BD68E1}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_sfx_enm_mangler_impact" ID="{3E71FD13-277C-4AF2-B49B-7A7A2830B388}">
+									<ChildrenList>
+										<Action Name="" ID="{F8801C62-AC83-4C13-96D0-1A48DF1F43EC}" ShortID="505416591">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_enm_mangler_impact" ID="{0A711595-AF05-4E01-B328-7588D22439E0}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{0285C4FB-46C8-4429-8221-21DC39D511BF}" ShortID="198611802">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_enm_mangler_forward" ID="{3C5DB1A3-8219-4CDF-8C91-641A468B0CA4}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_sfx_enm_mangler_stop" ID="{2608C555-CFA6-4E3C-85AB-EDDC6DF22226}">
+									<ChildrenList>
+										<Action Name="" ID="{D27A037C-197C-4251-A0E0-C49D9A53F50E}" ShortID="123436404">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_enm_mangler_backward" ID="{86CA4750-7DED-4F51-9C03-0080D6BD68E1}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{A125CF3F-3654-44CF-BF9B-1E4938E1FBFC}" ShortID="72055340">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_enm_mangler_forward" ID="{3C5DB1A3-8219-4CDF-8C91-641A468B0CA4}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="Play_sfx_enm_spikeball_impact" ID="{025D5960-0675-48E6-B107-D8B57EF5DF82}">
+							<ChildrenList>
+								<Action Name="" ID="{975B3E08-FAA0-4E41-A420-9E7BAA853A9C}" ShortID="687065407">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_enm_spikeball_impact" ID="{7A0DE458-2244-4E8D-B4FF-83AF0F1B9EA9}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_sfx_menu_enter" ID="{0119A54E-3C3B-46E8-AFD0-EAFBA7D7FB69}">
@@ -565,6 +730,18 @@ the switch group has "Play Mode" "Continious" activated and each switch in the s
 						<Action Name="" ID="{13D868BF-EFF7-4451-B679-6515CB725103}" ShortID="919892596">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="Volume" Type="Real64" Value="-6"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Master" ID="{37D3A713-ED95-4F0B-BFDF-3F45A5CB4272}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BD532A37-FD24-4610-B8BB-78D9EEBA21B9}" ShortID="182292051">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="26"/>
+								<Property Name="Lowpass" Type="int16" Value="67"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -606,6 +783,13 @@ the switch group has "Play Mode" "Continious" activated and each switch in the s
 										</Reference>
 									</ReferenceList>
 								</EventActionException>
+								<EventActionException Name="" ID="{2EA9E06D-BC7B-47BF-A69A-1AB6AFBDF4B1}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_menu_enter" ID="{B96E95C1-9F54-4202-82FF-9FAE1A935874}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
 							</ChildrenList>
 						</Action>
 					</ChildrenList>
@@ -622,6 +806,16 @@ the switch group has "Play Mode" "Continious" activated and each switch in the s
 						<Action Name="" ID="{B49AEC93-1E0C-47A9-8111-B71C97604C85}" ShortID="608355624">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="14"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Master" ID="{37D3A713-ED95-4F0B-BFDF-3F45A5CB4272}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6CFD863E-1A64-4E16-8AC0-BE3325CBE03F}" ShortID="461829013">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="27"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">

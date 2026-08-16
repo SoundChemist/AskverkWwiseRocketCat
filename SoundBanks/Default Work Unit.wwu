@@ -10,19 +10,24 @@
 						<ObjectRef Name="mx_mainmenu" ID="{05F088F5-CEBA-40D7-8530-8AB5102535F0}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_plr_dead_spike" ID="{A2284449-8ED1-411C-9768-459B02FC60F4}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_env_chain_movement" ID="{DC941E0A-55A1-4167-B09C-0DB6076017F0}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_int_bottle_impact" ID="{2D7759E8-5899-416B-AE13-1F88E1C2EB8A}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_sfx_plr_thrusters_right_loop" ID="{F63819C9-98EA-4189-A57A-FCCB45E7DD61}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_sfx_plr_thrusters_left_loop" ID="{AD23D286-2DC0-41BF-86D7-D7609A0CB93C}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="mx_level1" ID="{7C2EBEBC-9D1F-41D8-A616-3FBC0D87180E}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="resetfilter_mx_level1" ID="{D225C409-CC62-4277-8ED1-C07ACB04E5E5}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_menu_exit" ID="{6CE21A56-9D6D-42DE-A4E7-49AC71C4A70B}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="test" ID="{C38C74D6-E33D-4301-9F54-26F6DEE29E1D}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_int_pot_impact" ID="{2E8ACBF2-8BD0-4366-A831-03BDA5661180}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_int_cup_impact" ID="{19FC59B0-6DBB-4391-9662-23C67B30D07A}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_sfx_env_water_rising" ID="{A74F92DB-98E1-43A7-83B4-B8F86D78363F}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_enm_mangler_backward" ID="{D9954DBC-BC09-4441-8FD6-502DE2841E7F}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_mx_mainmenu" ID="{56672D1F-EE39-4441-A2AD-A2EE581FFC94}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_mx_level1" ID="{E77D50B2-C6A8-446C-8446-41DCFD97551D}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_all" ID="{9B574105-56BB-446F-B15D-4DD8AC602F93}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_level_complete" ID="{7CAA0FB0-4BA2-4470-8867-566FD01456D7}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_int_switch_activate" ID="{25F1480A-59CC-44F4-A6AA-132680233FE9}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_interact_gate_open" ID="{3A352F84-C4C3-4571-A55F-8E0B5AC3B163}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_enm_mangler_forward" ID="{DDA041A7-738F-459A-980A-7606F141CF9B}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="play_sfx_plr_thrusters_left_loop" ID="{A33A9A10-5C51-46DF-AC9C-E17DCE7D9ED5}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_menu_enter" ID="{0119A54E-3C3B-46E8-AFD0-EAFBA7D7FB69}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="play_sfx_plr_thrusters_right_loop" ID="{DB481B84-156C-47A2-A269-C3FAD8C494FC}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
@@ -30,12 +35,16 @@
 						<ObjectRef Name="Play_sfx_int_pickup_ball" ID="{9D8AC5AA-4E8B-483F-80EF-F41D36EBB184}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_int_pickup_key" ID="{96100745-BEC0-488B-9014-2118447E63DD}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_int_item_drop_water" ID="{02DFE717-3BFB-48DD-AC28-E7153197F6C8}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_enm_spikeball_impact" ID="{025D5960-0675-48E6-B107-D8B57EF5DF82}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_plr_grip_release" ID="{629AF15E-A2D9-48F7-B022-070C727CC12B}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_int_photoscreen_lights_reset" ID="{9655BCE6-18EA-4976-B972-95D71E49D4B4}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_int_collision_ball" ID="{27570E82-4ECA-498B-A3ED-385DE854B74D}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_int_worm_close" ID="{10EE647D-2269-49BD-98DF-BB1A54543980}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_int_photoscreen_light_on" ID="{F3995EE6-B7C0-4A2D-AB4C-598BF9290FF3}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_plr_dead_crushed" ID="{289B448A-5016-4A9A-AFEB-29B1EF7DA18D}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_enm_mangler_impact" ID="{3E71FD13-277C-4AF2-B49B-7A7A2830B388}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_menu_forward" ID="{B0AE0AA0-C4FD-4B1A-83D2-9B25B53A8729}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_int_fly_activate" ID="{30899A1C-0686-4C1D-A763-3F95B1E6D22A}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_plr_impact" ID="{A7BFA8C9-9525-4C2C-87F9-A2ADEF963AC0}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_int_collision_key" ID="{08C66577-84A3-4C4A-BC9A-3B3BB609AE2B}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_plr_grip_hook" ID="{F089EB7E-AFF8-4D7C-BF47-A279AF628C52}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
@@ -43,6 +52,7 @@
 						<ObjectRef Name="Play_sfx_plr_dead_water" ID="{732A536B-29D3-4DB2-B060-FCAC05D72F94}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_int_worm_open" ID="{567F7C54-E182-4DBD-AF97-EF8488CEA0BC}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_menu_backward" ID="{DB0829C1-726E-4DD7-8AD7-C6E5D18D1EE3}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_enm_mangler_stop" ID="{2608C555-CFA6-4E3C-85AB-EDDC6DF22226}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_int_photoscreen_drop" ID="{15A05AA3-26F8-4F44-AF7D-FC813CF94439}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="filter_mx_level1" ID="{DE3E3903-E985-4F45-9EBD-070B52411586}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

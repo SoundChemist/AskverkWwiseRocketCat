@@ -4,6 +4,20 @@
 		<WorkUnit Name="Default Work Unit" ID="{0726CB34-2DA3-4702-8CAF-3116451101E1}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="New Soundcaster Session" ID="{3DF01262-45C9-4639-ABC9-9F43D6CEEA7F}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_sfx_enm_mangler_backward" ID="{D9954DBC-BC09-4441-8FD6-502DE2841E7F}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_sfx_enm_mangler_forward" ID="{DDA041A7-738F-459A-980A-7606F141CF9B}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_sfx_enm_mangler_impact" ID="{3E71FD13-277C-4AF2-B49B-7A7A2830B388}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="explore" ID="{881FB9E3-E240-4019-A4FF-0B1B177169E7}"/>
