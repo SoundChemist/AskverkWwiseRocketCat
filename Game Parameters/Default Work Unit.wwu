@@ -20,6 +20,12 @@
 								<Property Name="InitialValue" Type="Real64" Value="75"/>
 							</PropertyList>
 						</GameParameter>
+						<GameParameter Name="RTPC_ImpactVelocity" ID="{F8024681-6A07-481F-A58E-9E463B19C13A}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="1200"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -18,7 +18,12 @@
 							<Position X="2" Y="0"/>
 						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_ImpactVelocity" ID="{F8024681-6A07-481F-A58E-9E463B19C13A}"/>
+							<Value>51.4954486345904</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="explore" ID="{881FB9E3-E240-4019-A4FF-0B1B177169E7}"/>
 					</CurrentStateList>

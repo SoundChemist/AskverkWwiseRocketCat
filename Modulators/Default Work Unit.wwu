@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8D9B963F-D254-41CD-83DF-94CF91B5DC7C}" SchemaVersion="123">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{8D9B963F-D254-41CD-83DF-94CF91B5DC7C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8D9B963F-D254-41CD-83DF-94CF91B5DC7C}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorEnvelope Name="Envelope_photodude" ID="{02DA24CA-781E-4AD1-B921-5E0B468593EC}" ShortID="154412606"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>

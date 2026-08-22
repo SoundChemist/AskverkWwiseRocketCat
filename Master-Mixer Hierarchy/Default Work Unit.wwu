@@ -92,6 +92,27 @@
 								</ObjectList>
 							</ObjectLists>
 						</Bus>
+						<Bus Name="Reverbs" ID="{2C29EF01-DE06-43A7-9398-C96F254E2171}">
+							<ChildrenList>
+								<AuxBus Name="Aux_ChurchReverb" ID="{563E67D5-B37D-4ED1-A2AA-8B6247ADE7F8}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{718A1927-1185-490D-9C9A-6EF93D16BEFD}" ShortID="439324244">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="Medium" ID="{AEB3F175-958B-45F2-A4C2-3FBD4F456568}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="RTPC">
