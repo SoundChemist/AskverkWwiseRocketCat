@@ -26,6 +26,26 @@
 								<Property Name="Max" Type="Real64" Value="1200"/>
 							</PropertyList>
 						</GameParameter>
+						<GameParameter Name="RTPC_BossballDistance" ID="{A23349BD-CD76-4598-8927-484A28809B16}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RTPC_BossballAirborne" ID="{BB6F62F4-1AF0-45E0-BBE0-F7FF0234386F}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RTPC_SpinnerRotationSpeed" ID="{3DB03C75-B8F1-4072-BF24-050925C2E995}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="RTPC_SpinnerMoveSpeed" ID="{DBCDD8D6-2FA1-412C-9B83-4BE8BAA71F30}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

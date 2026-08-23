@@ -418,11 +418,6 @@
 						<Sound Name="sfx_interact_gate_open" ID="{0BB792C9-F1D0-4147-80A0-CFAEBC3DD3C6}" ShortID="764713996">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="CenterPercentage" Type="int32">
-									<ValueList>
-										<Value>20</Value>
-									</ValueList>
-								</Property>
 								<Property Name="InitialDelay" Type="Real64">
 									<ValueList>
 										<Value>0.2</Value>
@@ -619,6 +614,9 @@
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="80"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="ATT_item" ID="{B39019B4-F2A0-49ED-B6DC-599A621A25E1}" WorkUnitID="{4CB9003F-D58A-40BF-8B9A-24579ACC3B84}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
 								</Reference>
@@ -2010,11 +2008,6 @@
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>3</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -2617,7 +2610,7 @@
 																			</Point>
 																			<Point>
 																				<XPos>368.27048</XPos>
-																				<YPos>-0</YPos>
+																				<YPos>0</YPos>
 																				<Flags>0</Flags>
 																			</Point>
 																			<Point>
@@ -3492,6 +3485,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="animal-sheep-bleat-04" ID="{DAD9C3F7-32CB-4DFB-A46D-8725CB9E16BE}">
+									<PropertyList>
+										<Property Name="VolumeOffset" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>animal-sheep-bleat-04.wav</AudioFile>
 									<MediaIDList>
@@ -6483,6 +6483,11 @@
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="80"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -6497,6 +6502,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="sfx_enm_mangler_forward" ID="{3C5DB1A3-8219-4CDF-8C91-641A468B0CA4}" ShortID="906766164">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
@@ -6582,6 +6594,11 @@
 												<Value>-580</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -6664,6 +6681,13 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="sfx_enm_mangler_impact" ID="{0A711595-AF05-4E01-B328-7588D22439E0}" ShortID="1038523734">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
@@ -6961,6 +6985,638 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<ActorMixer Name="bossball" ID="{C30658B5-1C1B-4CF4-9F9E-560C8C2883F3}" ShortID="942909672">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="sfx_enm_bossball_active" ID="{F03D4EBD-50E2-44E6-AA8C-172EAC4660CF}" ShortID="750753749">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="vo" ID="{5C142650-FF1D-4C32-9DB9-E3D232C62A93}" ShortID="92105902">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="enm_boss_vo_layer1" ID="{1767983A-9BBC-450C-9F0D-77B56909933F}" ShortID="741905459">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="enm_boss_vo_layer1" ID="{CB1D5C90-91EA-42BA-8E54-0FC9ABE45633}">
+															<Language>SFX</Language>
+															<AudioFile>enm_boss_vo_layer1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="453045508"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="enm_boss_vo_layer1" ID="{CB1D5C90-91EA-42BA-8E54-0FC9ABE45633}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="enm_boss_vo_layer2" ID="{9D33C5F6-D452-41C8-81B7-CDD6877F347C}" ShortID="140963347">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="enm_boss_vo_layer2" ID="{2764EDB0-4FCA-463F-A7DB-F3302C34F45E}">
+															<Language>SFX</Language>
+															<AudioFile>enm_boss_vo_layer2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="211148410"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{C6CD3684-3067-47A2-A834-271C3ECCC84B}" ShortID="158788138">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="RTPC_BossballDistance" ID="{A23349BD-CD76-4598-8927-484A28809B16}" WorkUnitID="{4F3F6920-3A74-424A-B81A-639BB97858D0}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{14D04010-F6DB-4182-8E9D-FADBFFC9DEDF}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>54.87646</XPos>
+																								<YPos>-0.01903</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>79.7139141742523</XPos>
+																								<YPos>-0.00855011499388591</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>2.3738</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+													<ActiveSourceList>
+														<ActiveSource Name="enm_boss_vo_layer2" ID="{2764EDB0-4FCA-463F-A7DB-F3302C34F45E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="enm_boss_vo_layer3" ID="{A3AC81D8-1E90-4803-AB45-EF18FD86639C}" ShortID="632736222">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-1000</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="enm_boss_vo_layer3" ID="{FF930AD5-0C88-42F2-8917-4AE5B0EAC573}">
+															<Language>SFX</Language>
+															<AudioFile>enm_boss_vo_layer3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="960103932"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{E50475C2-B932-45C9-83C3-298680574758}" ShortID="652554200">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Pitch"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="RTPC_BossballDistance" ID="{A23349BD-CD76-4598-8927-484A28809B16}" WorkUnitID="{4F3F6920-3A74-424A-B81A-639BB97858D0}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{D3E0F6B7-8726-48B0-88B8-AA745E2FFF70}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="65537"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>1023</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+													<ActiveSourceList>
+														<ActiveSource Name="enm_boss_vo_layer3" ID="{FF930AD5-0C88-42F2-8917-4AE5B0EAC573}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{ECD9D999-3659-450F-AC80-BC16CE919304}" ShortID="901061446">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="RTPC_BossballDistance" ID="{A23349BD-CD76-4598-8927-484A28809B16}" WorkUnitID="{4F3F6920-3A74-424A-B81A-639BB97858D0}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{EBBB9894-1B42-4BF5-9D28-82681056D6D2}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>65.01951</XPos>
+																						<YPos>-0.00201</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</BlendContainer>
+										<Sound Name="sfx_enm_bossball_earthquake" ID="{3E484966-8680-4119-94D4-AAAE24518327}" ShortID="382034263">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_enm_bossball_earthquake" ID="{0FFC2655-3C04-45DF-B221-D7C30569309C}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_enm_bossball_earthquake.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="666210870"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{9E19879C-FC0D-4610-9E6B-0831304DA0E9}" ShortID="980086444">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="RTPC_BossballDistance" ID="{A23349BD-CD76-4598-8927-484A28809B16}" WorkUnitID="{4F3F6920-3A74-424A-B81A-639BB97858D0}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{AF925805-05FB-4CD7-B28B-14C5089E9993}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-6.0206</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>30.55917</XPos>
+																						<YPos>-1.43643</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>59.94798</XPos>
+																						<YPos>-0.01356</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_enm_bossball_earthquake" ID="{0FFC2655-3C04-45DF-B221-D7C30569309C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{1CD41332-BABA-4EB9-8EA2-CBA4914CEBC3}" ShortID="140717293">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="RTPC_BossballAirborne" ID="{BB6F62F4-1AF0-45E0-BBE0-F7FF0234386F}" WorkUnitID="{4F3F6920-3A74-424A-B81A-639BB97858D0}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{6800CA5A-AA6E-4C0A-A4B2-0A178AA34CFE}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>49.999</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>50</XPos>
+																				<YPos>-0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</BlendContainer>
+								<RandomSequenceContainer Name="sfx_enm_bossball_impact" ID="{D3AFA465-1184-495A-8436-31457B54B933}" ShortID="846432200">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_enm_bossball_impact_03" ID="{65DD3B0D-BF76-4A7D-99C4-73F3C8633701}" ShortID="130708696">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_enm_bossball_impact_03" ID="{7006A3DA-D33E-435C-8CC2-C51471FE2065}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00807497681229073"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0872097495727398"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>sfx_enm_bossball_impact_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="958482502"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_enm_bossball_impact_03" ID="{7006A3DA-D33E-435C-8CC2-C51471FE2065}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_enm_bossball_impact_04" ID="{09ABDAB4-AA9E-4382-B2BF-1139CDDD26B0}" ShortID="836728944">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_enm_bossball_impact_04" ID="{4A3E003C-456A-4255-9F18-0117C2CA5063}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0154947861686363"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0813476273853404"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>sfx_enm_bossball_impact_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="668050380"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_enm_bossball_impact_04" ID="{4A3E003C-456A-4255-9F18-0117C2CA5063}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_enm_bossball_impact_01" ID="{D5564499-5832-4FD9-B1D6-980CA8D71444}" ShortID="735532603">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_enm_bossball_impact_01" ID="{EA661B94-87A7-403F-9EA9-CFE54CCB08CC}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_enm_bossball_impact_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="537527130"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_enm_bossball_impact_01" ID="{EA661B94-87A7-403F-9EA9-CFE54CCB08CC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_enm_bossball_impact_02" ID="{17416FD4-221B-4E05-A8E3-411CBD3E34B7}" ShortID="611674017">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_enm_bossball_impact_02" ID="{017DA6CF-0B84-419E-A3D9-665762D7A741}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0136949175963626"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0802130887786949"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>sfx_enm_bossball_impact_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="789170323"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_enm_bossball_impact_02" ID="{017DA6CF-0B84-419E-A3D9-665762D7A741}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="sfx_enm_bossball_plr_kill" ID="{B1DD46D4-670D-4268-9C9D-487303E3ED79}" ShortID="1021861512">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_enm_bossball_plr_kill-001" ID="{28872D75-7AB1-4816-B86C-6193EA2FE8F5}" ShortID="805153328">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_enm_bossball_plr_kill-001" ID="{2AAA2BDB-D068-4A4B-B540-3DE00522E379}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_enm_bossball_plr_kill-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="836639204"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_enm_bossball_plr_kill-001" ID="{2AAA2BDB-D068-4A4B-B540-3DE00522E379}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_enm_bossball_plr_kill-002" ID="{439E630E-AAE2-4D37-BF14-2AE2D488229F}" ShortID="327965777">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_enm_bossball_plr_kill-002" ID="{1E8600C6-EA86-4D78-B795-483D441A1CF4}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_enm_bossball_plr_kill-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="222158277"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_enm_bossball_plr_kill-002" ID="{1E8600C6-EA86-4D78-B795-483D441A1CF4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_enm_bossball_plr_kill-003" ID="{026F31E9-1F7F-4AB9-9772-A3B89A7CF4BA}" ShortID="523893772">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_enm_bossball_plr_kill-003" ID="{47ADF1A3-2C7A-48C0-9A7D-1EDA945C7444}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_enm_bossball_plr_kill-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="791185448"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_enm_bossball_plr_kill-003" ID="{47ADF1A3-2C7A-48C0-9A7D-1EDA945C7444}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_enm_bossball_plr_kill-004" ID="{21E00EC1-3CBC-4A7C-8F00-242B23EBFAAE}" ShortID="850778258">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_enm_bossball_plr_kill-004" ID="{90A67E1B-0FD0-4E8C-A30B-C1F631200D3D}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_enm_bossball_plr_kill-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="638206449"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_enm_bossball_plr_kill-004" ID="{90A67E1B-0FD0-4E8C-A30B-C1F631200D3D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

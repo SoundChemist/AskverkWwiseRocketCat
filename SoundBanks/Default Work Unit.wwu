@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_sfx_env_water_rising" ID="{3F200A47-073A-4035-9FDD-B17021CAD018}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_env_entrance_spitter" ID="{177A33F4-E56E-4040-80B4-C674F2D14544}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_enm_bossball_active" ID="{D9F09F38-8F77-4098-A579-0820F0F25D19}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="mx_mainmenu" ID="{05F088F5-CEBA-40D7-8530-8AB5102535F0}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_plr_dead_spike" ID="{A2284449-8ED1-411C-9768-459B02FC60F4}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_env_chain_movement" ID="{DC941E0A-55A1-4167-B09C-0DB6076017F0}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
@@ -40,6 +41,7 @@
 						<ObjectRef Name="Play_sfx_int_photoscreen_lights_reset" ID="{9655BCE6-18EA-4976-B972-95D71E49D4B4}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_int_collision_ball" ID="{27570E82-4ECA-498B-A3ED-385DE854B74D}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_int_worm_close" ID="{10EE647D-2269-49BD-98DF-BB1A54543980}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_enm_bossball_impact" ID="{B5E620BE-63C3-4A21-A0E2-2C282990F9C4}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_int_photoscreen_light_on" ID="{F3995EE6-B7C0-4A2D-AB4C-598BF9290FF3}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_plr_dead_crushed" ID="{289B448A-5016-4A9A-AFEB-29B1EF7DA18D}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_enm_mangler_impact" ID="{3E71FD13-277C-4AF2-B49B-7A7A2830B388}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
@@ -53,6 +55,7 @@
 						<ObjectRef Name="Play_sfx_int_worm_open" ID="{567F7C54-E182-4DBD-AF97-EF8488CEA0BC}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_menu_backward" ID="{DB0829C1-726E-4DD7-8AD7-C6E5D18D1EE3}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_enm_mangler_stop" ID="{2608C555-CFA6-4E3C-85AB-EDDC6DF22226}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sfx_enm_bossball_plr_kill" ID="{A8E8931D-029B-4F01-92EC-E300CA2E6792}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sfx_int_photoscreen_drop" ID="{15A05AA3-26F8-4F44-AF7D-FC813CF94439}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="filter_mx_level1" ID="{DE3E3903-E985-4F45-9EBD-070B52411586}" WorkUnitID="{5156EB61-2501-4121-B114-1646C90AA034}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

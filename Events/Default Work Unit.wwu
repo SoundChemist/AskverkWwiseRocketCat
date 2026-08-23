@@ -716,6 +716,43 @@ the switch group has "Play Mode" "Continious" activated and each switch in the s
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Bossball" ID="{D31EF97D-E333-4026-B115-62AD2A012E3A}" ShortID="869736663">
+							<ChildrenList>
+								<Event Name="Play_sfx_enm_bossball_impact" ID="{B5E620BE-63C3-4A21-A0E2-2C282990F9C4}">
+									<ChildrenList>
+										<Action Name="" ID="{250B7FB4-6D79-4529-9A88-05B5AC19661D}" ShortID="1018688048">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_enm_bossball_impact" ID="{D3AFA465-1184-495A-8436-31457B54B933}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_sfx_enm_bossball_active" ID="{D9F09F38-8F77-4098-A579-0820F0F25D19}">
+									<ChildrenList>
+										<Action Name="" ID="{C6F2D450-33FA-4F7E-BA55-14E7176C1D2C}" ShortID="938247871">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_enm_bossball_active" ID="{F03D4EBD-50E2-44E6-AA8C-172EAC4660CF}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_sfx_enm_bossball_plr_kill" ID="{A8E8931D-029B-4F01-92EC-E300CA2E6792}">
+									<ChildrenList>
+										<Action Name="" ID="{78E6D293-C688-48F5-8E31-35E1C78F7C51}" ShortID="259047656">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_enm_bossball_plr_kill" ID="{B1DD46D4-670D-4268-9C9D-487303E3ED79}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_sfx_menu_enter" ID="{0119A54E-3C3B-46E8-AFD0-EAFBA7D7FB69}">
@@ -752,6 +789,7 @@ the switch group has "Play Mode" "Continious" activated and each switch in the s
 						<Action Name="" ID="{FC9476F4-5720-44F5-A90F-1ED4654348E6}" ShortID="3293371">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="8"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList/>
 							<ChildrenList>
@@ -826,6 +864,7 @@ the switch group has "Play Mode" "Continious" activated and each switch in the s
 						<Action Name="" ID="{978A3DF7-AA0E-422F-8887-870DF3E1F7E7}" ShortID="582805808">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="10"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList/>
 						</Action>
