@@ -753,6 +753,17 @@ the switch group has "Play Mode" "Continious" activated and each switch in the s
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Play_sfx_env_spinner_loop" ID="{F1671234-E65D-43D9-8650-795F1C532095}">
+							<ChildrenList>
+								<Action Name="" ID="{ED066970-9111-4BDA-9AF0-35AB60A3599A}" ShortID="363197331">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_enm_spinner_active" ID="{E70EB05C-3612-46E8-8A56-F50A96AF86D3}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_sfx_menu_enter" ID="{0119A54E-3C3B-46E8-AFD0-EAFBA7D7FB69}">
@@ -887,6 +898,28 @@ the switch group has "Play Mode" "Continious" activated and each switch in the s
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="sfx_menu_backward" ID="{A78B73E6-8B26-4BAD-B58E-E9184253AE4F}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_sfx_menu_hover" ID="{2BDCBCD4-762B-429E-A16F-9608B14EDA82}">
+					<ChildrenList>
+						<Action Name="" ID="{404E3974-278B-407E-B510-E869623FD80F}" ShortID="830516527">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_menu_hover" ID="{37E324E5-4A35-46A0-8018-EEA0EE4AF785}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_sfx_menu_level_choice" ID="{3CE6FC12-D423-4443-9ECC-406265E4E634}">
+					<ChildrenList>
+						<Action Name="" ID="{28792DE9-C91E-4212-9E66-01E59B3A56B5}" ShortID="372601702">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_menu_level_choice" ID="{AC275A34-A786-4D94-9CF1-F0735D8ACF85}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

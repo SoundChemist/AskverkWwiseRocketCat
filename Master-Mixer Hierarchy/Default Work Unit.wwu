@@ -52,6 +52,80 @@
 							</ObjectLists>
 						</Bus>
 						<Bus Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}">
+							<ChildrenList>
+								<Bus Name="SFX_Boss" ID="{6CCEFE5E-337F-4E14-9968-3414FB90E259}"/>
+								<Bus Name="SFX_AllNoBoss" ID="{72DA9E9C-6B0D-456D-BAD7-CBBB41C7A59F}">
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{8FE967E9-F1EF-4820-B80E-AF992FAD88A7}" ShortID="269411063">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="RTPC_BossballDistance" ID="{A23349BD-CD76-4598-8927-484A28809B16}" WorkUnitID="{4F3F6920-3A74-424A-B81A-639BB97858D0}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{2DA913E3-1A74-477E-8D79-C5136622E7FC}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-6.17299</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>963.58908</XPos>
+																				<YPos>-5.92468</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3000</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
+								<Bus Name="SFX_Spinner" ID="{7EE1EEA0-0AA4-41E3-822F-DDADE6D21CA1}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{68582090-5CF0-423C-A577-121A2AF03AC3}" ShortID="356393174">
+														<ReferenceList>
+															<Reference Name="Effect">
+																<Custom>
+																	<Effect Name="Compressor (Custom)" ID="{0E2B8DB7-783F-4B10-8220-CCC81626CE4B}" ShortID="704715261" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+																		<PropertyList>
+																			<Property Name="Ratio" Type="Real32" Value="10.2"/>
+																			<Property Name="ReleaseTime" Type="Real32" Value="0.3"/>
+																			<Property Name="Threshold" Type="Real32" Value="-25.1"/>
+																		</PropertyList>
+																	</Effect>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
+							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
 									<Reference>
@@ -95,6 +169,11 @@
 						<Bus Name="Reverbs" ID="{2C29EF01-DE06-43A7-9398-C96F254E2171}">
 							<ChildrenList>
 								<AuxBus Name="Aux_ChurchReverb" ID="{563E67D5-B37D-4ED1-A2AA-8B6247ADE7F8}">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="80"/>
+									</PropertyList>
 									<ObjectLists>
 										<ObjectList Name="Effects">
 											<Reference>

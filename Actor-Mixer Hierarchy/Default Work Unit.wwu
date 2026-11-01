@@ -21,7 +21,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+							<ObjectRef Name="SFX_AllNoBoss" ID="{72DA9E9C-6B0D-456D-BAD7-CBBB41C7A59F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1028,6 +1028,7 @@
 											</ValueList>
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="80"/>
 										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
@@ -2212,7 +2213,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+							<ObjectRef Name="SFX_AllNoBoss" ID="{72DA9E9C-6B0D-456D-BAD7-CBBB41C7A59F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -3448,7 +3449,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+							<ObjectRef Name="SFX_AllNoBoss" ID="{72DA9E9C-6B0D-456D-BAD7-CBBB41C7A59F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -3715,6 +3716,308 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="sfx_menu_level_choice" ID="{AC275A34-A786-4D94-9CF1-F0735D8ACF85}" ShortID="386120306">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>45</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7DE7A32A-76F5-4D20-912B-1F41981B0334}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1150</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{82D47838-8104-407D-99A7-FAA1BBC88A9A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="int_cup_impact_01" ID="{29D0E9CC-2EB7-4331-B270-FEC6E8039DD1}" ShortID="23782720">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="int_cup_impact_01" ID="{2232EEA4-815C-4D44-B8FA-B4CC3C0ECD10}">
+											<Language>SFX</Language>
+											<AudioFile>int_cup_impact_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="339775916"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="int_cup_impact_01" ID="{2232EEA4-815C-4D44-B8FA-B4CC3C0ECD10}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="int_cup_impact_02" ID="{2258FD44-82F8-4184-B5C8-039F5606005E}" ShortID="788466595">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="int_cup_impact_02" ID="{904C1243-2B0E-4ADA-ACE0-2562CBC89F69}">
+											<Language>SFX</Language>
+											<AudioFile>int_cup_impact_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="199100724"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="int_cup_impact_02" ID="{904C1243-2B0E-4ADA-ACE0-2562CBC89F69}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="int_cup_impact_03" ID="{8A5892E4-77CF-4FAA-91E9-F1EE5D7A7DCE}" ShortID="53976598">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="int_cup_impact_03" ID="{44A9EE60-4E95-466C-8970-9594A13BFDE8}">
+											<Language>SFX</Language>
+											<AudioFile>int_cup_impact_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="30671627"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="int_cup_impact_03" ID="{44A9EE60-4E95-466C-8970-9594A13BFDE8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="int_cup_impact_04" ID="{B3A38182-73A8-42A6-957F-1C69C2DDB688}" ShortID="919507772">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="int_cup_impact_04" ID="{F79E44DE-B075-4201-92F6-23BCA2A9FF62}">
+											<Language>SFX</Language>
+											<AudioFile>int_cup_impact_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="851674410"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="int_cup_impact_04" ID="{F79E44DE-B075-4201-92F6-23BCA2A9FF62}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="int_cup_impact_05" ID="{BC8B128E-8760-42D8-85FB-BD2733CC2B40}" ShortID="500048906">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="int_cup_impact_05" ID="{D3DA8728-AACB-4746-8ECF-B09595D4B127}">
+											<Language>SFX</Language>
+											<AudioFile>int_cup_impact_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1017627522"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="int_cup_impact_05" ID="{D3DA8728-AACB-4746-8ECF-B09595D4B127}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="sfx_menu_hover" ID="{37E324E5-4A35-46A0-8018-EEA0EE4AF785}" ShortID="182616027">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>49</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>680</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="lights_on_01" ID="{5BAF7CD4-175D-475E-990F-C9B670F4373D}" ShortID="63844832">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="lights_on_01" ID="{947F15D6-8032-4DF7-89CB-BCCCA752EE8D}">
+											<Language>SFX</Language>
+											<AudioFile>lights_on_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="643529976"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="lights_on_01" ID="{947F15D6-8032-4DF7-89CB-BCCCA752EE8D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="lights_on_02" ID="{690A2EB8-4886-42B2-BAD6-825CF4577326}" ShortID="239854822">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="lights_on_02" ID="{261419D6-D77E-4521-BC23-7767CB2E34A7}">
+											<Language>SFX</Language>
+											<AudioFile>lights_on_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="547328927"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="lights_on_02" ID="{261419D6-D77E-4521-BC23-7767CB2E34A7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="lights_on_03" ID="{11E3BDBB-9F01-47DB-A88B-A73EBC3617A5}" ShortID="19538965">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="lights_on_03" ID="{90DEBDC4-6406-4B30-9A7F-1E8BE6548CEB}">
+											<Language>SFX</Language>
+											<AudioFile>lights_on_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="119808301"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="lights_on_03" ID="{90DEBDC4-6406-4B30-9A7F-1E8BE6548CEB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="lights_on_04" ID="{AE138898-441D-4FB8-82E8-E50FA023B226}" ShortID="358814555">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="lights_on_04" ID="{01854DA5-4746-419D-9850-A1D9EB379F82}">
+											<Language>SFX</Language>
+											<AudioFile>lights_on_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="997636285"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="lights_on_04" ID="{01854DA5-4746-419D-9850-A1D9EB379F82}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="lights_on_05" ID="{B295FF9D-D884-43F5-8C63-362AF0C1C261}" ShortID="177171270">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="lights_on_05" ID="{644D4B7A-2BD0-4D25-870D-CC04DAC665C3}">
+											<Language>SFX</Language>
+											<AudioFile>lights_on_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="622939508"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="lights_on_05" ID="{644D4B7A-2BD0-4D25-870D-CC04DAC665C3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Environment" ID="{6D40281B-AD13-409A-A31D-D491857F5B27}" ShortID="728161775">
@@ -3727,7 +4030,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+							<ObjectRef Name="SFX_AllNoBoss" ID="{72DA9E9C-6B0D-456D-BAD7-CBBB41C7A59F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -4117,7 +4420,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX_Master" ID="{96991B7E-EBBC-4972-858E-7B1DBC670C6F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+							<ObjectRef Name="SFX_AllNoBoss" ID="{72DA9E9C-6B0D-456D-BAD7-CBBB41C7A59F}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -6986,12 +7289,15 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<ActorMixer Name="bossball" ID="{C30658B5-1C1B-4CF4-9F9E-560C8C2883F3}" ShortID="942909672">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+									<ObjectRef Name="SFX_Boss" ID="{6CCEFE5E-337F-4E14-9968-3414FB90E259}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -7047,6 +7353,60 @@
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{51102245-1497-4CFC-97AD-78D328BC4A1B}" ShortID="986779521">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="RTPC_BossballDistance" ID="{A23349BD-CD76-4598-8927-484A28809B16}" WorkUnitID="{4F3F6920-3A74-424A-B81A-639BB97858D0}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{79431CD2-9024-43CE-A475-BA3A3428DF65}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>11.41604</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>846.48649</XPos>
+																								<YPos>10.08956</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1050.81081</XPos>
+																								<YPos>7.95062</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1501.62162</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>3000</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
 													<ActiveSourceList>
 														<ActiveSource Name="enm_boss_vo_layer1" ID="{CB1D5C90-91EA-42BA-8E54-0FC9ABE45633}" Platform="Linked"/>
 													</ActiveSourceList>
@@ -7073,55 +7433,6 @@
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
-													<ObjectLists>
-														<ObjectList Name="RTPC">
-															<Reference>
-																<Local>
-																	<RTPC Name="" ID="{C6CD3684-3067-47A2-A834-271C3ECCC84B}" ShortID="158788138">
-																		<PropertyList>
-																			<Property Name="PropertyName" Type="string" Value="Volume"/>
-																		</PropertyList>
-																		<ReferenceList>
-																			<Reference Name="ControlInput">
-																				<ObjectRef Name="RTPC_BossballDistance" ID="{A23349BD-CD76-4598-8927-484A28809B16}" WorkUnitID="{4F3F6920-3A74-424A-B81A-639BB97858D0}"/>
-																			</Reference>
-																			<Reference Name="Curve">
-																				<Custom>
-																					<Curve Name="" ID="{14D04010-F6DB-4182-8E9D-FADBFFC9DEDF}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="3"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>-200</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>54.87646</XPos>
-																								<YPos>-0.01903</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>79.7139141742523</XPos>
-																								<YPos>-0.00855011499388591</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>100</XPos>
-																								<YPos>2.3738</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</Custom>
-																			</Reference>
-																		</ReferenceList>
-																	</RTPC>
-																</Local>
-															</Reference>
-														</ObjectList>
-													</ObjectLists>
 													<ActiveSourceList>
 														<ActiveSource Name="enm_boss_vo_layer2" ID="{2764EDB0-4FCA-463F-A7DB-F3302C34F45E}" Platform="Linked"/>
 													</ActiveSourceList>
@@ -7174,12 +7485,22 @@
 																						<PointList>
 																							<Point>
 																								<XPos>0</XPos>
-																								<YPos>0</YPos>
+																								<YPos>1933</YPos>
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>100</XPos>
-																								<YPos>1023</YPos>
+																								<XPos>773.26202</XPos>
+																								<YPos>1089</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1007.48663</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>3000</XPos>
+																								<YPos>0</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>
@@ -7218,17 +7539,22 @@
 																				<PointList>
 																					<Point>
 																						<XPos>0</XPos>
-																						<YPos>-200</YPos>
+																						<YPos>4.40822</YPos>
 																						<Flags>5</Flags>
 																					</Point>
 																					<Point>
-																						<XPos>65.01951</XPos>
-																						<YPos>-0.00201</YPos>
+																						<XPos>753.82854</XPos>
+																						<YPos>3.20072</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
-																						<XPos>100</XPos>
-																						<YPos>0</YPos>
+																						<XPos>1251.89189</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3000</XPos>
+																						<YPos>-200</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -7290,22 +7616,127 @@
 																				<PointList>
 																					<Point>
 																						<XPos>0</XPos>
-																						<YPos>-6.0206</YPos>
+																						<YPos>0</YPos>
 																						<Flags>5</Flags>
 																					</Point>
 																					<Point>
-																						<XPos>30.55917</XPos>
-																						<YPos>-1.43643</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>59.94798</XPos>
-																						<YPos>-0.01356</YPos>
-																						<Flags>0</Flags>
-																					</Point>
-																					<Point>
-																						<XPos>100</XPos>
+																						<XPos>748.12645</XPos>
 																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1230.87183</XPos>
+																						<YPos>-3.22324</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3000</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{5A50DFD7-26C7-4BBE-B504-9413AFFFC349}" ShortID="801388541">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="RTPC_BossballDistance" ID="{A23349BD-CD76-4598-8927-484A28809B16}" WorkUnitID="{4F3F6920-3A74-424A-B81A-639BB97858D0}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{AF15E487-8BCC-4ECD-8FEE-54E7D0F87419}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="65537"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>62</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>259.89305</XPos>
+																						<YPos>62</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>391.44386</XPos>
+																						<YPos>35</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>872.72727</XPos>
+																						<YPos>22</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>991.44385</XPos>
+																						<YPos>5</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3000</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{CFE667C2-D0E0-4355-957D-C9077F93C570}" ShortID="466295742">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="RTPC_BossballAirborne" ID="{BB6F62F4-1AF0-45E0-BBE0-F7FF0234386F}" WorkUnitID="{4F3F6920-3A74-424A-B81A-639BB97858D0}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{CE8D4422-A76C-4590-908E-BB97CAF086F5}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.49999</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.50099</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.50199</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>-200</YPos>
 																						<Flags>37</Flags>
 																					</Point>
 																				</PointList>
@@ -7323,59 +7754,11 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="RTPC">
-											<Reference>
-												<Local>
-													<RTPC Name="" ID="{1CD41332-BABA-4EB9-8EA2-CBA4914CEBC3}" ShortID="140717293">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="Volume"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<ObjectRef Name="RTPC_BossballAirborne" ID="{BB6F62F4-1AF0-45E0-BBE0-F7FF0234386F}" WorkUnitID="{4F3F6920-3A74-424A-B81A-639BB97858D0}"/>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{6800CA5A-AA6E-4C0A-A4B2-0A178AA34CFE}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>49.999</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>50</XPos>
-																				<YPos>-0</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>100</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
 								</BlendContainer>
 								<RandomSequenceContainer Name="sfx_enm_bossball_impact" ID="{D3AFA465-1184-495A-8436-31457B54B933}" ShortID="846432200">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-4</Value>
@@ -7507,9 +7890,59 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{AA084774-7A01-4F92-A06E-44873CBFE701}" ShortID="519601012">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="RTPC_BossballDistance" ID="{A23349BD-CD76-4598-8927-484A28809B16}" WorkUnitID="{4F3F6920-3A74-424A-B81A-639BB97858D0}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{0CC4C7ED-0BC7-4762-A0E5-A1EE74C98F01}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1256.17685305592</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1513.65409622887</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3000</XPos>
+																				<YPos>-5.72362</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="sfx_enm_bossball_plr_kill" ID="{B1DD46D4-670D-4268-9C9D-487303E3ED79}" ShortID="1021861512">
 									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>2</Value>
@@ -7617,6 +8050,284 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
+						<Sound Name="sfx_enm_spinner_active" ID="{E70EB05C-3612-46E8-8A56-F50A96AF86D3}" ShortID="1063362079">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D12F57D0-AC2E-49F5-965C-1EF81B24A1EA}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="1"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{CBCAEE4C-4DA6-4A67-ACC5-3FB10B005A00}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{EEC957F0-44F3-4F69-9653-F3C28C85F1EA}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="90"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="ATT_item" ID="{B39019B4-F2A0-49ED-B6DC-599A621A25E1}" WorkUnitID="{4CB9003F-D58A-40BF-8B9A-24579ACC3B84}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3428E8B2-0E86-4FF8-B56E-A8F07AC9D3BB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX_Spinner" ID="{7EE1EEA0-0AA4-41E3-822F-DDADE6D21CA1}" WorkUnitID="{9DB875CC-7A2F-4E6D-8FB4-25BF32C1D07F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="enm_spinner_active_01" ID="{994C7BA9-8B9F-4477-9F6A-5773174C649A}">
+									<PropertyList>
+										<Property Name="VolumeOffset" Type="Real64">
+											<ValueList>
+												<Value>-3.4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>enm_spinner_active_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="635535643"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{65088893-B17B-442B-BE56-0E8E1469BF4C}" ShortID="707736458">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+														<ObjectRef Name="Treble" ID="{FB516F18-AA49-4B92-BC11-FA23E8CC59B4}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{C40488B5-BC41-4696-AC18-E0F35FAD76F5}" ShortID="964262394">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="RTPC_SpinnerRotationSpeed" ID="{3DB03C75-B8F1-4072-BF24-050925C2E995}" WorkUnitID="{4F3F6920-3A74-424A-B81A-639BB97858D0}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{7729FB29-25D6-4892-BDAB-7AD4F6FDA52F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-354</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>13.04813</XPos>
+																		<YPos>24</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>13.2620320855615</XPos>
+																		<YPos>1476</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>16.89839</XPos>
+																		<YPos>4800</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>17.21925</XPos>
+																		<YPos>-3928</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>17.43315</XPos>
+																		<YPos>4567</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>18.28877</XPos>
+																		<YPos>-2808</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>18.93048</XPos>
+																		<YPos>2013</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>24.70588</XPos>
+																		<YPos>-66</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>27.70053</XPos>
+																		<YPos>578</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>28.2353</XPos>
+																		<YPos>-4287</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>28.4502</XPos>
+																		<YPos>4249</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>29.19786</XPos>
+																		<YPos>-443</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>35.5080213903743</XPos>
+																		<YPos>-855</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>53.47594</XPos>
+																		<YPos>-1109</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>56.04278</XPos>
+																		<YPos>552</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>59.25134</XPos>
+																		<YPos>-890</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>828</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>210.16043</XPos>
+																		<YPos>843</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>223.26135</XPos>
+																		<YPos>452</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>224.52112</XPos>
+																		<YPos>-1273</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>225.073062622624</XPos>
+																		<YPos>396</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>226.29521</XPos>
+																		<YPos>358</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>228.07487</XPos>
+																		<YPos>-1227</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>229.6256</XPos>
+																		<YPos>481</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>230.94728</XPos>
+																		<YPos>-1146</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>231.97231</XPos>
+																		<YPos>406</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>232.8877</XPos>
+																		<YPos>-1128</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>235.66859</XPos>
+																		<YPos>436</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>237.33401</XPos>
+																		<YPos>-941</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>239.344642351015</XPos>
+																		<YPos>537</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>250</XPos>
+																		<YPos>828</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="enm_spinner_active_01" ID="{994C7BA9-8B9F-4477-9F6A-5773174C649A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

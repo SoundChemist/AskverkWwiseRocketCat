@@ -10,34 +10,50 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="sfx_enm_mangler_forward" ID="{3C5DB1A3-8219-4CDF-8C91-641A468B0CA4}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="sfx_enm_bossball_impact" ID="{D3AFA465-1184-495A-8436-31457B54B933}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_enm_spinner_active" ID="{E70EB05C-3612-46E8-8A56-F50A96AF86D3}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="sfx_enm_bossball_plr_kill" ID="{B1DD46D4-670D-4268-9C9D-487303E3ED79}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="sfx_enm_spinner_active" ID="{E70EB05C-3612-46E8-8A56-F50A96AF86D3}" WorkUnitID="{B837374B-A779-4E71-BDE0-2E9FC19EDBE2}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="level1progression" ID="{A910A2A2-7C19-42CD-8099-7278D38D8473}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
 							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="level1progression" ID="{A910A2A2-7C19-42CD-8099-7278D38D8473}" WorkUnitID="{88453746-E797-4C3A-B253-F2E60B264585}"/>
+							<Position X="4" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_SpinnerRotationSpeed" ID="{3DB03C75-B8F1-4072-BF24-050925C2E995}"/>
-							<Value>0</Value>
+							<Value>1.1409660883635E-312</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_SpinnerMoveSpeed" ID="{DBCDD8D6-2FA1-412C-9B83-4BE8BAA71F30}"/>
-							<Value>0</Value>
+							<Value>96.9191270860077</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_BossballDistance" ID="{A23349BD-CD76-4598-8927-484A28809B16}"/>
-							<Value>100</Value>
+							<Value>1895.96879063719</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_BossballAirborne" ID="{BB6F62F4-1AF0-45E0-BBE0-F7FF0234386F}"/>
-							<Value>55</Value>
+							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_ImpactVelocity" ID="{F8024681-6A07-481F-A58E-9E463B19C13A}"/>
